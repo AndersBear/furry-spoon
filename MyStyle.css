@@ -42,4 +42,12 @@ figcaption {color: yellow}
   cursor: default;
 }
 
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
 
