@@ -29,7 +29,6 @@ figcaption {color: yellow}
   text-decoration: none;
   color: orange;
   display: inline;
-  transition: .3s background-color;
 }
  
 .nav a:hover {
@@ -51,5 +50,6 @@ figcaption {color: yellow}
     height: 50px;
     line-height: 50px;
     font-size: 1.4em;
+    text-align: left;
   }
 
