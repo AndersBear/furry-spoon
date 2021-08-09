@@ -32,6 +32,10 @@ figcaption {color: yellow}
   display: inline;
   padding: 10;
   margin: 10;
+  border-left: 20;
+  border-top: 20;
+  border-right: 20;
+  border-bottom: 20;
 }
  
 .nav a:hover {
