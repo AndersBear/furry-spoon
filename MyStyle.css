@@ -1,7 +1,7 @@
 
 
 body 
-{ background-image: url("background.png") cover;
+{ background: url("background.png") cover;
   background-color: purple}
 
 
