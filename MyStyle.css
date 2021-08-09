@@ -27,6 +27,7 @@ figcaption {color: yellow}
 .nav a {
   float: center;
   text-decoration: none;
+  background-color: black;
   color: orange;
   display: inline;
 }
