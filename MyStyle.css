@@ -1,7 +1,7 @@
 
 
 body 
-{ background: url("background.png") auto: 749px; height: 749px;
+{ background-image: url("background.png") auto: 749px; height: 749px;
   bg-color: purple}
 
 
