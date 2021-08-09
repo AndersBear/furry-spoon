@@ -30,6 +30,8 @@ figcaption {color: yellow}
   background-color: black;
   color: orange;
   display: inline;
+  padding: 10;
+  margin: 10;
 }
  
 .nav a:hover {
