@@ -8,7 +8,7 @@ P {color: red}
 
 figcaption {color: yellow}
 
-.nav ul {
+.nav ol {
   list-style: none;
   background-color: black;
   text-align: left;
