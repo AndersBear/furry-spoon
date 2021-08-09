@@ -1,7 +1,10 @@
 
 
 body 
-{bg-color: purple}
+{ background: url("background.png") auto: 749px; height: 749px;
+  bg-color: purple}
+
+
 
 
 P {color: red}
