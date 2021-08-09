@@ -1,8 +1,8 @@
 
 
 body 
-{ background-image: url("background.png") auto: 749px; height: 749px;
-  bg-color: purple}
+{ background-image: url("background.png") cover;
+  background-color: purple}
 
 
 
