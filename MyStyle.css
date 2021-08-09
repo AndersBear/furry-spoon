@@ -27,7 +27,7 @@ figcaption {color: yellow}
 .nav a {
   text-decoration: none;
   color: orange;
-  display: block;
+  display: inline;
   transition: .3s background-color;
 }
  
