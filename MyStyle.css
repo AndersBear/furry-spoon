@@ -8,4 +8,37 @@ P {color: red}
 
 figcaption {color: yellow}
 
+.nav ul {
+  list-style: none;
+  background-color: black;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  font-color: green;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+ 
+.nav a {
+  text-decoration: none;
+  color: purple;
+  display: block;
+  transition: .3s background-color;
+}
+ 
+.nav a:hover {
+  background-color: yellow;
+}
+ 
+.nav a.active {
+  background-color: PeachPuff;
+  color: Chocolate;
+  cursor: default;
+}
+
 
