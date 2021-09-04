@@ -50,6 +50,12 @@ figcaption {color: yellow}
   cursor: default;
 }
 
+ .boxed {
+  border: 10px solid green ;
+  background-color: blue;
+}
+  
+
 @media screen and (min-width: 600px) {
   .nav li {
     float: right;
@@ -64,9 +70,5 @@ figcaption {color: yellow}
 }
 
   
-  .boxed {
-  border: 10px solid green ;
-  background-color: blue;
-}
-  
+ 
   
