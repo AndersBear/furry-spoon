@@ -61,8 +61,10 @@ imgPos = [
 $image.mousemove(function(e){
   $('#coords').html((e.pageX-imgPos[0]) +', '+ (e.pageY-imgPos[1]));
   
-  document.getElementById("coords").innerHTML = e.pageX-imgPos[0];
-  document.getElementById("coords").innerHTML = e.pageX-imgPos[1];
+  $('#coords').text('X: ' + X + ', Y: ' + Y);
+  
+  document.getElementById("coords").innerHTML = X;
+  document.getElementById("coords").innerHTML = Y;
   
 });
   
