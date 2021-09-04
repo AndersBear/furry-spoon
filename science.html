@@ -29,10 +29,29 @@
   
   <br><br><br>
   <figure>
-  <a href="https://thispersondoesnotexist.com"><img src="thispersondoesnotexistexample.jpeg" width=200 height=200></img></a>
+  <a href="https://thispersondoesnotexist.com"><img id="XYcoord_image" src="thispersondoesnotexistexample.jpeg" width=200 height=200></img></a>
+  <div id="coords"></div>
   <figcaption>thispersondoesnotexist.com</figcaption>
   </figure>
 
+
+<br><br><br>
+
+$(function(){
+
+$image = $('XYcoord_image');
+imgPos = [
+    $image.offset().left,
+    $image.offset().top,
+    $image.offset().left + $image.outerWidth(),
+    $image.offset().top + $image.outerHeight()
+];
+
+$image.mousemove(function(e){
+  $('#coords').html((e.pageX-imgPos[0]) +', '+ (e.pageY-imgPos[1]));
+});
+
+});
   
  
     
