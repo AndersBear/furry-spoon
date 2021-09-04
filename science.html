@@ -33,7 +33,7 @@
   <a href="https://thispersondoesnotexist.com"><img id="XYcoord_image" src="thispersondoesnotexistexample.jpeg" width=200 height=200></img></a>
   <figcaption>thispersondoesnotexist.com</figcaption>
   </figure>
-  <div><img src="xy.png" width=200 height=200></div>
+  <div><img id="xy" src="xy.png" width=200 height=200></div>
   <div id="coords"></div>
   </div>
 
@@ -55,7 +55,7 @@
 
 $(function(){
 
-$image = $('#XYcoord_image');
+$image = $('#xy');
 imgPos = [
     $image.offset().left,
     $image.offset().top,
