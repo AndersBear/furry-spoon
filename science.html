@@ -72,7 +72,7 @@ $image.mousemove(function(e){
 });
   
   $(document).ready(function() {
-        $('XYcoord_image').on("mousemove", function(e) {
+        $('#XYcoord_image').on("mousemove", function(e) {
             var offset = $(this).offset();
             var X = (e.pageX - offset.left);
             var Y = (e.pageY - offset.top);
