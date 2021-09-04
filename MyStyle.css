@@ -10,27 +10,6 @@ body
 P {color: red}
 P2 {color: black}
 
-#content {
-  width: 400px;
-  margin: 0 auto;    
-  background-color: red;
-  position: relative;
-}
-
-#background {
-    width: 20px;
-    height: 100px;    
-    background-color: blue;
-    color: white;
-}
-
-#banner{
-    position: absolute;
-    left: -200px;
-    width: 200px;
-    height: 100px;
-    background-color: yellow;    
-    text-align: right;
 
 figcaption {color: yellow}
 
