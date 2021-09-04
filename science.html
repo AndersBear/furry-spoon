@@ -77,6 +77,16 @@ $image.mousemove(function(e){
   
 });
   
+  
+   $(document).ready(function() {
+        $('xy').click(function(e) {
+            var offset = $(this).offset();
+            var X = (e.pageX - offset.left);
+            var Y = (e.pageY - offset.top);
+            $('#coords').text('X: ' + X + ', Y: ' + Y);
+        });
+    });
+  
   $(document).ready(function() {
         $('xy').on("mousemove", function(e) {
             var offset = $(this).offset();
