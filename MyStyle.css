@@ -16,8 +16,8 @@ figcaption {color: yellow}
 .fixedhomebutton {
   /* z-index: 8; z-axis (in-out) */
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 100;
+  left: 100;
 }
 
 /* The sidebar menu */
@@ -26,7 +26,7 @@ figcaption {color: yellow}
   width: 200px; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   /* z-index: 3;  higher priority, higher position? */
-  top: 20%; /* Stay at the top */
+  top: 20%; /* Stay at 20% from the top */
   left: 100;
   background-color: #CD5C5C; /* Indian red */
   /* overflow-x: hidden;  Disable horizontal scroll */
