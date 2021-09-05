@@ -148,7 +148,8 @@ $image.mousemove(function(e){
   
   
   function showCoords() {
-  var x = event.clientX;
+  //var x = event.clientX;
+  var x = event.pageX - this.offsetLeft
   var y = event.clientY;
   var coordins = "X coords: " + x + ", Y coords: " + y;
   document.getElementById("coords").innerHTML = coordins;  
