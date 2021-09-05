@@ -27,10 +27,10 @@ figcaption {color: yellow}
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   /* z-index: 3;  higher priority, higher position? */
   top: 100; /* Stay at the top */
-  left: 10;
+  left: 100;
   background-color: #CD5C5C; /* Indian red */
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 200px;
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 
