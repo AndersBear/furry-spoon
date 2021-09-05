@@ -16,8 +16,8 @@ figcaption {color: yellow}
 .fixedhomebutton {
   /* z-index: 8; z-axis (in-out) */
   position: fixed;
-  top: 100;
-  left: 100;
+  top: 0;
+  left: 0;
 }
 
 /* The sidebar menu */
