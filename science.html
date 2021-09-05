@@ -57,7 +57,7 @@
 
 $(function(){
 
-$image = $('xy');
+$image = $('#xy');
 imgPos = [
     $image.offset().left,
     $image.offset().top,
@@ -70,8 +70,8 @@ $image.mousemove(function(e){
   
   $('#coords').text('X: ' + X + ', Y: ' + Y);
   
-  document.getElementById("x_coord").innerHTML = X;
-  document.getElementById("y_coord").innerHTML = Y;
+  document.getElementById("#x_coord").innerHTML = X;
+  document.getElementById("#y_coord").innerHTML = Y;
   
 });
   
@@ -79,7 +79,7 @@ $image.mousemove(function(e){
   
   
    $(document).ready(function() {
-        $('xy').click(function(e) {
+        $('#xy').click(function(e) {
             var offset = $(this).offset();
             var X = (e.pageX - offset.left);
             var Y = (e.pageY - offset.top);
@@ -88,7 +88,7 @@ $image.mousemove(function(e){
     });
   
   $(document).ready(function() {
-        $('xy').on("mousemove", function(e) {
+        $('#xy').on("mousemove", function(e) {
             var offset = $(this).offset();
             var X = (e.pageX - offset.left);
             var Y = (e.pageY - offset.top);
