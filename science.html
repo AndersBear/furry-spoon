@@ -143,7 +143,10 @@ $image.mousemove(function(e){
     //var testDiv = document.getElementById("test");
     //var demoDiv = document.getElementById("demo");
     
-  document.getElementById("coords").innerHTML = "offsetLeft: " + xy.offsetLeft + "offsetTop: " + xy.offsetTop;
+  //document.getElementById("coords").innerHTML = "offsetLeft: " + xy.offsetLeft + "offsetTop: " + xy.offsetTop;
+    
+    //when page is scrolled, .offsetTop will be different
+    
     
   var x = (event.clientX - xy.offsetLeft);
   //var x = event.pageX - this.offsetLeft
