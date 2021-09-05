@@ -51,13 +51,19 @@
   
   
   <br><br><br>
+  
+  
   <div class="boxed">
+    
   <figure>
   <a href="https://thispersondoesnotexist.com"><img src="thispersondoesnotexistexample.jpeg" width=200 height=200></img></a>
   <figcaption>thispersondoesnotexist.com</figcaption>
   </figure>
-  <div><img id="xy" src="xy.png" width=200 height=200></div>
-  <div id="coords">x:  y:  </div>
+  
+  <div><img id="xy" src="xy.png" width=200 height=200 onclick="showCoords(event)"></div>click on image
+  
+  <div id="coords"></div>
+  
   <div class="smallboxed"><font size=7><p2 id="x_coord"></p2></font></div>
   <div class="smallboxed"><font size=7><p2 id="y_coord"></p2></font></div>
   </div>
@@ -82,7 +88,7 @@
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
   
-  
+  /*
 
 $(function(){
 
@@ -124,6 +130,18 @@ $image.mousemove(function(e){
             $('#coords').text('X: ' + X + ', Y: ' + Y);
         });
     });
+  
+  
+  */
+  
+  
+  
+  
+  function showCoords(event) {
+  var x = event.clientX;
+  var y = event.clientY;
+  var coordins = "X coords: " + x + ", Y coords: " + y;
+  document.getElementById("#coords").innerHTML = coordins;  
   
   
   
