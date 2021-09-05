@@ -14,7 +14,7 @@ P2 {color: black}
 figcaption {color: yellow}
 
 .fixedhomebutton {
-  z-index: auto;
+  z-index: 8;
   position: fixed;
   top: 0;
   left: 0;
@@ -26,8 +26,8 @@ figcaption {color: yellow}
   width: 200px; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 3; /* higher priority, higher position? */
-  top: 0; /* Stay at the top */
-  left: 0;
+  top: 100; /* Stay at the top */
+  left: 10;
   background-color: #CD5C5C; /* Indian red */
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
