@@ -21,7 +21,7 @@ fixed_home_button {
 }
 
 /* The sidebar menu */
-.sidenav {
+sidenav {
   // height: 100%; /* Full-height: remove this if you want "auto" height */
   width: 200px; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
