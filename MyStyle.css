@@ -61,6 +61,7 @@ figcaption {color: yellow}
 //}
 
 .nav ol {
+  position: fixed;
   list-style: none;
   background-color: black;
   text-align: center;
@@ -68,6 +69,7 @@ figcaption {color: yellow}
   margin: 0;
 }
 .nav li {
+  position: fixed;
   font-family: 'Oswald', sans-serif;
   font-size: 1.2em;
   font-color: green;
@@ -76,6 +78,7 @@ figcaption {color: yellow}
 }
  
 .nav a {
+  position: fixed;
   float: center;
   text-decoration: none;
   background-color: black;
@@ -90,10 +93,12 @@ figcaption {color: yellow}
 }
  
 .nav a:hover {
+  position: fixed;
   background-color: yellow;
 }
  
 .nav a.active {
+  position: fixed;
   background-color: PeachPuff;
   color: Chocolate;
   cursor: default;
