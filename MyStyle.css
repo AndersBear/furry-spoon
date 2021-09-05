@@ -14,7 +14,7 @@ P2 {color: black}
 figcaption {color: yellow}
 
 div.fixed_home_button {
-  z-index: 5;
+  z-index: auto;
   position: fixed;
   top: 0;
   left: 0;
