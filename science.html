@@ -60,7 +60,7 @@
   <figcaption>thispersondoesnotexist.com</figcaption>
   </figure>
   
-  <div><img onclick="showCoords(event)" id="xy" src="xy.png" width=200 height=200></img></div>click on image
+  <div><img id="xy" onclick="showCoords()" src="xy.png" width=200 height=200></img></div>click on image
   <br>
   <p id="coords"></p>
   <br>
@@ -88,7 +88,7 @@
 
 
 
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+<script type="text/javascript">
   
   /*
 
@@ -139,13 +139,13 @@ $image.mousemove(function(e){
   
   
   
-  function showCoords(event) {
+  function showCoords() {
   var x = event.clientX;
   var y = event.clientY;
   var coordins = "X coords: " + x + ", Y coords: " + y;
   document.getElementById("coords").innerHTML = coordins;  
-    #x_coord.text = x;
-    #y_coord.text = y;
+    //#x_coord.text = x;
+    //#y_coord.text = y;
   
   }
   
