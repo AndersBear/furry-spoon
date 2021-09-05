@@ -63,7 +63,7 @@
   
   <div class="boxed">
   
-  <div><img id="xy" onclick="showCoords(event)" src="xy.png" width=200 height=200></img></div>click on image
+  <div><img id="xy" onclick="showCoords(event)" src="xy.png" width=200 height=200></img></div>click on this 200x200 pixel image
   <br>
   <p2 id="coords"></p2>
   <p2 id="coords2"></p2>
@@ -151,7 +151,7 @@ $image.mousemove(function(e){
   var x = (event.clientX - xy.offsetLeft);
   //var x = event.pageX - this.offsetLeft
   var y = (event.clientY - xy.offsetTop);
-  var coordins = "X coords: " + x + ", Y coords: " + y;
+  var coordins = "X coord: " + x + ", Y coord: " + y;
   document.getElementById("coords2").innerHTML = coordins;  
     
   }
