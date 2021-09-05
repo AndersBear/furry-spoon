@@ -25,8 +25,8 @@ figcaption {color: yellow}
   /* height: 100%;*/ /* Full-height: remove this if you want "auto" height */
   width: 200px; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: auto; /* higher priority, higher position? */
-  top: 90; /* Stay at the top */
+  z-index: 0; /* higher priority, higher position? */
+  top: 0; /* Stay at the top */
   left: 0;
   background-color: #CD5C5C; /* Indian red */
   overflow-x: hidden; /* Disable horizontal scroll */
