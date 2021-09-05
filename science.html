@@ -61,14 +61,18 @@
   </figure>
   
   <div><img id="xy" src="xy.png" width=200 height=200 onclick="showCoords(event)"></div>click on image
-  
+  <br>
   <div id="coords"></div>
-  
+  <br>
   <div class="smallboxed"><font size=7><p2 id="x_coord"></p2></font></div>
   <div class="smallboxed"><font size=7><p2 id="y_coord"></p2></font></div>
+  
   </div>
+  
+  
 
 <br><br><br>
+  
 
 <div class="boxed">
   This text is enclosed in a box.
@@ -76,14 +80,12 @@
   might look neat at first,
   but what does it do to your vision?
 </div>
-
-
   
   
   
 </div>
-        
-  
+
+
 
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
@@ -141,7 +143,7 @@ $image.mousemove(function(e){
   var x = event.clientX;
   var y = event.clientY;
   var coordins = "X coords: " + x + ", Y coords: " + y;
-  document.getElementById("#coords").innerHTML = coordins;  
+  document.getElementById("coords").innerHTML = coordins;  
   
   
   
