@@ -13,6 +13,12 @@ P2 {color: black}
 
 figcaption {color: yellow}
 
+div.fixed_home_button {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 /* The sidebar menu */
 .sidenav {
   // height: 100%; /* Full-height: remove this if you want "auto" height */
