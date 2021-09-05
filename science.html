@@ -155,9 +155,9 @@ $image.mousemove(function(e){
     
   document.getElementById("coords").innerHTML = "offsetLeft: " + xy.offsetLeft + "<br>offsetTop: " + xy.offsetTop;
     
-  var x = event.clientX;
+  var x = event.clientX - xy.offsetLeft;
   //var x = event.pageX - this.offsetLeft
-  var y = event.clientY;
+  var y = event.clientY - xy.offsetTop;
   var coordins = "X coords: " + x + ", Y coords: " + y;
   document.getElementById("coords2").innerHTML = coordins;  
     
