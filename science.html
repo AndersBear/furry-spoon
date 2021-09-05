@@ -62,10 +62,8 @@
   
   <div><img id="xy" onclick="showCoords()" src="xy.png" width=200 height=200></img></div>click on image
   <br>
-  <p id="coords"></p>
+  <p2 id="coords"></p2>
   <br>
-  <div class="smallboxed"><font size=7><p2 id="x_coord"></p2></font></div>
-  <div class="smallboxed"><font size=7><p2 id="y_coord"></p2></font></div>
   
   </div>
   
@@ -144,9 +142,7 @@ $image.mousemove(function(e){
   var y = event.clientY;
   var coordins = "X coords: " + x + ", Y coords: " + y;
   document.getElementById("coords").innerHTML = coordins;  
-    //#x_coord.text = x;
-    //#y_coord.text = y;
-  
+    
   }
   
   
