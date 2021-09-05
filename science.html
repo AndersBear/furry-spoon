@@ -73,6 +73,7 @@
   <div><img id="xy" onclick="showCoords(event)" src="xy.png" width=200 height=200></img></div>click on image
   <br>
   <p2 id="coords"></p2>
+  <p2 id="coords2"></p2>
   <br>
   
   </div>
@@ -148,11 +149,17 @@ $image.mousemove(function(e){
   
   
   function showCoords(event) {
+    
+    //var testDiv = document.getElementById("test");
+    //var demoDiv = document.getElementById("demo");
+    
+  document.getElementById("coords").innerHTML = "offsetLeft: " + xy.offsetLeft + "<br>offsetTop: " + xy.offsetTop;
+    
   var x = event.clientX;
   //var x = event.pageX - this.offsetLeft
   var y = event.clientY;
   var coordins = "X coords: " + x + ", Y coords: " + y;
-  document.getElementById("coords").innerHTML = coordins;  
+  document.getElementById("coords2").innerHTML = coordins;  
     
   }
   
