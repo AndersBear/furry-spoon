@@ -13,7 +13,7 @@ P2 {color: black}
 
 figcaption {color: yellow}
 
-.fixed_home_button {
+.fixedhomebutton {
   z-index: auto;
   position: fixed;
   top: 0;
