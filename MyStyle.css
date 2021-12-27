@@ -50,6 +50,7 @@ figcaption {color: yellow}
   font-size: 25px;
   color: #111; //black
   display: block;
+  scroll-margin-top: 120px;
 }
 
 /* When you mouse over the navigation links, change their color */
