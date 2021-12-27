@@ -149,11 +149,25 @@ $image.mousemove(function(e){
     //when page is scrolled, .offsetTop will be different
     
     
+    
+    var bodyRect = document.body.getBoundingClientRect();
+    elemRect = element.getBoundingClientRect();
+    var V_offset = elemRect.top - bodyRect.top;
+    alert('Element is ' + V_offset + ' vertical pixels from <body>');
+    var H_offset = elemRect.left - bodyRect.left;
+    alert('Element is ' + H_offset + ' horizontal pixels from <body>'):
+    
+    
+          
+    /*
   var x = (event.clientX - xy.offsetLeft);
   //var x = event.pageX - this.offsetLeft
   var y = (event.clientY - xy.offsetTop);
   var coordins = "X coord: " + x + ", Y coord: " + y;
   document.getElementById("coords2").innerHTML = coordins;  
+    */
+    
+    
     
   }
   
