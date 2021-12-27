@@ -207,7 +207,7 @@ $image.mousemove(function(e){
     
     
     var x = (event.clientX - xy.offsetLeft);
-    var y = ((event.clientY - xy.offsetTop) - getOffset(xy).top);
+    var y = ((event.clientY - xy.offsetTop) + getOffset(xy).top);
     //var y = ((event.clientY - xy.offsetTop) - yy);
     var coordins = "X coord: " + x + ", Y coord: " + y;
     document.getElementById("coords2").innerHTML = coordins;  
