@@ -68,7 +68,6 @@ figcaption {color: yellow}
 
 .nav ol {
   list-style: none;
-  background-color: black;
   text-align: center;
   padding: 0;
   margin: 0;
@@ -79,7 +78,7 @@ figcaption {color: yellow}
 }
 .nav li {
   font-family: 'Oswald', sans-serif;
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-color: green;
   line-height: 40px;
   height: 40px;
