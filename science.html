@@ -204,8 +204,10 @@ $image.mousemove(function(e){
    
     
     
+    
+    
     var x = (event.clientX - xy.offsetLeft);
-    var y = ((event.clientY - xy.offsetTop) + getOffset(xy).top);
+    var y = ((event.clientY - xy.offsetTop) + getOffset(element).top);
     //var y = (event.clientY - xy.offsetTop);
     var coordins = "X coord: " + x + ", Y coord: " + y;
     document.getElementById("coords2").innerHTML = coordins;  
@@ -217,7 +219,8 @@ $image.mousemove(function(e){
     
     function getOffset(el) 
     {
-     const rect = el.getBoundingClientRect(); //getBoundingClientRec() gets position of element relative to viewing window
+     const rect = el.getBoundingClientRect(); 
+     //getBoundingClientRec() gets position of element relative to viewing window
      return {
     left: rect.left + window.scrollX,
     top: rect.top + window.scrollY
