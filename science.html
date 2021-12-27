@@ -152,14 +152,18 @@ $image.mousemove(function(e){
     
     var bodyRect = document.body.getBoundingClientRect();
     var elemRect = element.getBoundingClientRect();
-    var x = (event.clientX - xy.offsetLeft);
-    var V_offset = elemRect.top - bodyRect.top;
-    alert('Element is ' + V_offset + ' vertical pixels from <body>');
+    //var x = (event.clientX - xy.offsetLeft);
+    var V_offset = (elemRect.top - bodyRect.top);
+    var y = (event.clientY + V_offset);
+    //alert('Element is ' + V_offset + ' vertical pixels from <body>');
     var H_offset = elemRect.left - bodyRect.left;
-    var y = (event.clientY - xy.offsetTop);
-    alert('Element is ' + H_offset + ' horizontal pixels from <body>');
+    var x = (event.clientX + H_offset);
+    //var y = (event.clientY - xy.offsetTop);
     
+    //alert('Element is ' + H_offset + ' horizontal pixels from <body>');
     
+    var coordins = "X coord: " + x + ", Y coord: " + y;
+    document.getElementById("coords2").innerHTML = coordins;  
     
     
     
