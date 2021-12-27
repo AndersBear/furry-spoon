@@ -94,9 +94,9 @@ figcaption {color: yellow}
   padding: 10;
   margin: 10;
   border-left: 20;
-  border-top: 20;
+  border-top: 25;
   border-right: 20;
-  border-bottom: 20;
+  border-bottom: 25;
 }
  
 .nav a:hover {
