@@ -203,17 +203,17 @@ $image.mousemove(function(e){
     */
    
     
-    
+    var yy = window.scrollY + document.querySelector(xy).getBoundingClientRect().top   // Y
     
     
     var x = (event.clientX - xy.offsetLeft);
-    var y = ((event.clientY - xy.offsetTop) + getOffset(xy).top);
+    var y = ((event.clientY - xy.offsetTop) + yy);
     //var y = (event.clientY - xy.offsetTop);
     var coordins = "X coord: " + x + ", Y coord: " + y;
     document.getElementById("coords2").innerHTML = coordins;  
     
     
-    
+    /*
     
     //also from StackOverflow
     
@@ -221,17 +221,14 @@ $image.mousemove(function(e){
     {
      const rect = el.getBoundingClientRect(); 
      //getBoundingClientRec() gets position of element relative to viewing window
-     return {
-    left: rect.left + window.scrollX,
-    top: rect.top + window.scrollY
-    };
+     return {left: rect.left + window.scrollX, top: rect.top + window.scrollY};
     } //end of function getOffset()
     
     
     //getOffset(element).top;
     //getOffset(xy).top:
     
-    
+    */
     
     
     
