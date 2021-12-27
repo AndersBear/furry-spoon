@@ -151,7 +151,7 @@ $image.mousemove(function(e){
     
     
     var bodyRect = document.body.getBoundingClientRect();
-    elemRect = element.getBoundingClientRect();
+    var elemRect = element.getBoundingClientRect();
     var x = (event.clientX - xy.offsetLeft);
     var V_offset = elemRect.top - bodyRect.top;
     alert('Element is ' + V_offset + ' vertical pixels from <body>');
