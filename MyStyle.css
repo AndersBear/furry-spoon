@@ -74,6 +74,7 @@ figcaption {color: yellow}
   margin: 0;
   margin-left: 25%;
   position: fixed;
+  background-color: Navy;
 }
 .nav li {
   font-family: 'Oswald', sans-serif;
