@@ -152,14 +152,19 @@ $image.mousemove(function(e){
     
     var bodyRect = document.body.getBoundingClientRect();
     elemRect = element.getBoundingClientRect();
+    var x = (event.clientX - xy.offsetLeft);
     var V_offset = elemRect.top - bodyRect.top;
     alert('Element is ' + V_offset + ' vertical pixels from <body>');
     var H_offset = elemRect.left - bodyRect.left;
-    alert('Element is ' + H_offset + ' horizontal pixels from <body>'):
+    var y = (event.clientY - xy.offsetTop);
+    alert('Element is ' + H_offset + ' horizontal pixels from <body>');
+    
+    
+    
     
     
           
-    /*
+    /* WORKS, but not after scrolling (shows negative values)
   var x = (event.clientX - xy.offsetLeft);
   //var x = event.pageX - this.offsetLeft
   var y = (event.clientY - xy.offsetTop);
