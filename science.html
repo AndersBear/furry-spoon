@@ -215,7 +215,7 @@ $image.mousemove(function(e){
     
     //var yy = window.scrollY + document.querySelector('xy').getBoundingClientRect().top   // Y
     
-    
+    //WORKS for scrolling, December 27, 2021:
     var x = (event.clientX - xy.offsetLeft);
     //var y = ((event.clientY - xy.offsetTop) + getOffset(xy).top);
     var y = ((event.clientY - xy.offsetTop) + getYPosition());
@@ -227,6 +227,7 @@ $image.mousemove(function(e){
     
     //also from StackOverflow
     
+    /*
     function getOffset(el) 
     {
      const rect = el.getBoundingClientRect(); 
@@ -237,6 +238,7 @@ $image.mousemove(function(e){
     
     //getOffset(element).top;
     //getOffset(xy).top:
+    */
     
     
     
