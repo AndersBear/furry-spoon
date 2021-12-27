@@ -70,7 +70,26 @@
   <p2 id="coords2"></p2>
   <br>
   
+  
+  The Y coord should now work even after scrolling.
+  The winning code is shown below (I looked for simple examples.)
+  Thank you <a href="https://developer.mozilla.org/en-US/"></a>.
+  
+  function getYPosition() 
+    {
+     var top = window.pageYOffset || document.documentElement.scrollTop;
+     return top;
+    }
+  
+  var y = ((event.clientY - xy.offsetTop) + <font color=green><b>getYPosition</b></font>());
+  
+  Also thank you <a href="https://stackoverflow.com/"></a>
+  
+  
   </div>
+
+<br><br>
+
  
   
 
