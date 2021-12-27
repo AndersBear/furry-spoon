@@ -205,30 +205,30 @@ $image.mousemove(function(e){
     
     
     var x = (event.clientX - xy.offsetLeft);
-    //var y = ((event.clientY - xy.offsetTop) + getOffset(xy).top);
-    var y = (event.clientY - xy.offsetTop);
+    var y = ((event.clientY - xy.offsetTop) + getOffset(xy).top);
+    //var y = (event.clientY - xy.offsetTop);
     var coordins = "X coord: " + x + ", Y coord: " + y;
     document.getElementById("coords2").innerHTML = coordins;  
     
     
-    /*
+    
     
     //also from StackOverflow
     
     function getOffset(el) 
     {
-     const rect = el.getBoundingClientRect();
+     const rect = el.getBoundingClientRect(); //getBoundingClientRec() gets position of element relative to viewing window
      return {
     left: rect.left + window.scrollX,
     top: rect.top + window.scrollY
     };
-    }
+    } //end of function getOffset()
     
     
     //getOffset(element).top;
     //getOffset(xy).top:
     
-    */
+    
     
     
     
@@ -236,6 +236,8 @@ $image.mousemove(function(e){
     
     //window.scrollY + document.querySelector('#elementId').getBoundingClientRect().top   // Y
     //window.scrollX + document.querySelector('#elementId').getBoundingClientRect().left  // X
+    
+    
     
     
   } //end of function ShowCoords()
