@@ -149,6 +149,7 @@ $image.mousemove(function(e){
     //when page is scrolled, .offsetTop will be different
     
     
+    /*
     
     var bodyRect = document.body.getBoundingClientRect();
     var elemRect = element.getBoundingClientRect();
@@ -165,6 +166,7 @@ $image.mousemove(function(e){
     var coordins = "X coord: " + x + ", Y coord: " + y;
     document.getElementById("coords2").innerHTML = coordins;  
     
+    */
     
     
           
@@ -176,6 +178,25 @@ $image.mousemove(function(e){
   document.getElementById("coords2").innerHTML = coordins;  
     */
     
+    
+    //try this code copied from StackOverflow:
+    
+    //(relative to another element)
+    //var bodyRect = document.body.getBoundingClientRect(),
+    //var elemRect = element.getBoundingClientRect(),
+    //var V_offset = elemRect.top - bodyRect.top;
+
+//alert('Element is ' + V_offset + ' vertical pixels from <body>'
+    
+    //(absolute)
+    var rect = element.getBoundingClientRect();
+    console.log(rect.top, rect.right, rect.bottom, rect.left);
+    
+    
+    var x = (event.clientX - xy.offsetLeft);
+    var y = ((event.clientY - xy.offsetTop) + rect.top);
+    var coordins = "X coord: " + x + ", Y coord: " + y;
+    document.getElementById("coords2").innerHTML = coordins;  
     
     
   }
