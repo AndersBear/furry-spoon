@@ -188,6 +188,8 @@ $image.mousemove(function(e){
 
 //alert('Element is ' + V_offset + ' vertical pixels from <body>'
     
+    /*
+    
     //(absolute)
     var rect = element.getBoundingClientRect();
     console.log(rect.top, rect.right, rect.bottom, rect.left);
@@ -198,6 +200,31 @@ $image.mousemove(function(e){
     var coordins = "X coord: " + x + ", Y coord: " + y;
     document.getElementById("coords2").innerHTML = coordins;  
     
+    */
+   
+    
+    
+    var x = (event.clientX - xy.offsetLeft);
+    var y = ((event.clientY - xy.offsetTop) + getOffset(xy).top);
+    var coordins = "X coord: " + x + ", Y coord: " + y;
+    document.getElementById("coords2").innerHTML = coordins;  
+    
+    
+    
+    //also from StackOverflow
+    
+    function getOffset(el) 
+    {
+     const rect = el.getBoundingClientRect();
+     return {
+    left: rect.left + window.scrollX,
+    top: rect.top + window.scrollY
+    };
+    }
+    
+    
+    //getOffset(element).top;
+    //getOffset(xy).top:
     
   }
   
