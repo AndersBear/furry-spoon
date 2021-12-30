@@ -124,6 +124,7 @@ figcaption {color: yellow}
  .boxed {
   border: 5px solid black;
   background-color: gray;
+  font-size: 14;
   scroll-snap-margin-top: 100px;
   scroll-margin-top: 100px;
  
