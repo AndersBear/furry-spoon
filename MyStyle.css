@@ -101,7 +101,7 @@ figcaption {color: yellow}
   float: center;
   text-decoration: none;
   background-color: Navy;
-  color: orange;
+  color: #7CFC00;  /* Lawngreen */
   display: inline;
   padding: 10;
   margin: 10;
