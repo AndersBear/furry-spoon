@@ -46,7 +46,7 @@ figcaption {color: yellow}
   /* z-index: 3;  higher priority, higher position? */
   top: 20%; /* Stay at 20% from the top */
   left: 1%;
-  background-color: #CD5C5C; /* Indian red */
+  background-color: #008080; /* teal */
   /* overflow-x: hidden;  Disable horizontal scroll */
   padding-top: 20px;
   padding-bottom: 20px;
