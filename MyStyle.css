@@ -17,7 +17,7 @@ body
 { background: url("MyGIF.gif") 0 0 / cover;
   background-color: purple}
 
-P {color: teal}
+P {color: lawngreen}
 P2 {color: black}
 
 #acoustics {scroll-snap-margin-top: 100px;}
@@ -29,7 +29,7 @@ P2 {color: black}
 
 
 
-figcaption {color: yellow}
+figcaption {color: lawngreen}
 
 .fixedhomebutton {
   /* z-index: 8; z-axis (in-out) */
