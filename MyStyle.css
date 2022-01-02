@@ -17,7 +17,7 @@ body
 { background: url("MyGIF.gif") 0 0 / cover;
   background-color: purple}
 
-P {color: red}
+P {color: teal}
 P2 {color: black}
 
 #acoustics {scroll-snap-margin-top: 100px;}
