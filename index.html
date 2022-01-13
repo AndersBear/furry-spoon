@@ -180,15 +180,19 @@ function myFunction2(){
         var timer;
          
         function startLoop() {
-            timer = setInterval(play() {
+            if(timer)
+            setTimeout(startLoop, 5000);
+
+            //timer = setInterval(play() {
                 //alert("5 seconds are up");
-                document.getElementById('laughtrack3').play();                
-            }, 5000);
+                //document.getElementById('laughtrack3').play();                
+            //}, 5000);
         }
          
         function stopLoop() {
             //alert("Timer stopped");
-            clearInterval(timer);
+            //clearInterval(timer);
+            timer = false;
         }
         
         
