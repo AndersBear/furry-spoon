@@ -183,7 +183,7 @@ function myFunction2(){
         function startLoop() {
             document.getElementById("looper5").play();
             if(timer)
-            setTimeout(startLoop, 5000);
+            timer=setTimeout(startLoop, 5000);
 
             //timer = setInterval(play() {
                 //alert("5 seconds are up");
@@ -195,6 +195,7 @@ function myFunction2(){
             //alert("Timer stopped");
             //clearInterval(timer);
             timer = false;
+            clearTimeout(timer);
         }
         
         
