@@ -28,7 +28,7 @@ P2 {color: black}
 #earthsci {scroll-snap-margin-top: 100px;}
 
 
-button.your-button-class {
+.remove-default-button-attributes {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
