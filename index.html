@@ -122,7 +122,10 @@
             
             
               <audio id="looper5" src="laughtrack3.mp3" loop="loop"></audio>
-            <button onclick="document.getElementById('laughtrack3').play()">loop every 5 secs</button>
+            <button onclick="startLoop()">start loop</button>
+            <button onclick="stopLoop()">stop loop</button>
+            
+            
             
 
  
@@ -164,11 +167,33 @@ function myFunction2(){
     
     
     <script type="text/javascript">
+        
+        /*
     setInterval(play(){
       document.getElementById("looper5").play(){ 
       //console.log('your audio is started just now');
     }, 5000);
         }
+        */
+        
+        
+        var timer;
+         
+        function startLoop() {
+            timer = setInterval(play() {
+                //alert("5 seconds are up");
+                document.getElementById('laughtrack3').play();                
+            }, 5000);
+        }
+         
+        function stopLoop() {
+            //alert("Timer stopped");
+            clearInterval(timer);
+        }
+        
+        
+        
+        
     </script>
     
     
