@@ -20,6 +20,15 @@ body
 P {color: lawngreen}
 P2 {color: black}
 
+
+.ImageBorder1
+{
+    border-width: 5px;
+    border-color: Black;
+}
+
+
+
 #acoustics {scroll-snap-margin-top: 100px;}
 #botany {scroll-snap-margin-top: 100px;}
 #chemistry {scroll-snap-margin-top: 100px;}
