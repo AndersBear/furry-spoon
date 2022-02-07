@@ -21,11 +21,6 @@ P {color: lawngreen}
 P2 {color: black}
 
 
-.ImageBorder1
-{
-    border-width: 5px;
-    border-color: Black;
-}
 
 
 
@@ -35,6 +30,15 @@ P2 {color: black}
 #computersci {scroll-snap-margin-top: 100px;}
 #physics {scroll-snap-margin-top: 100px;}
 #earthsci {scroll-snap-margin-top: 100px;}
+
+
+
+
+.ImageBorder1
+{
+    border-width: 10px;
+    border-color: black;
+}
 
 
 
@@ -49,6 +53,7 @@ P2 {color: black}
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
+  background-color: #008080;       /* teal */
 }
 
 
