@@ -272,8 +272,11 @@ stringy += '.';
 {     
     var random_number2;
     var stringy2 = ' ';
-    var C_count;
-
+    var C_count = 0;
+    //var vowelArray = ['a', 'e', 'i', 'o', 'u'];
+    var vowelArrayInNumbers = [97,101,105,111,117];
+    var isVowel = "false";
+    
 for(var W_count=1; W_count<6; W_count++)
 {  
  for(var L_count=1; L_count<6; L_count++)
@@ -295,25 +298,42 @@ for(var W_count=1; W_count<6; W_count++)
  else if(L_count==2 && vowel2=="u")
  {stringy2 += String.fromCharCode(117);}
  else
- {stringy2 += String.fromCharCode(random_number);} 
-}
+ {
+     for(var i=0; i<5; i++)
+     {
+         if(random_number2 == vowelArrayInNumbers[i])        //check if random_number2 is a vowel  
+             isVowel = "true";
+     }             
+             
+         if (isVowel == "true")
+             stringy2 += String.fromCharCode(random_number2);  //add it to the string
+     
+         else if(C_count == 2)       // a second consecutive consonant                     
+         {
+             stringy2 += vowel2;    //add a vowel instead
+             C_count = 0;           //reset consonant count
+         }
+         else
+         {
+             stringy2 += String.fromCharCode(random_number2);    //add it to string, but...
+             C_count++;                                          //increment the consonant count
+         }
+  }//end final else       
+     
+     
+     
+}//end inner for
         
 if(W_count<5)
 stringy2 += ' ';
-}
-    
-    if(stringy2[2] != 'a' && stringy2[2] != 'e' && stringy2[2] != 'i' && stringy2[2] != 'o' && stringy2[2] != 'u')
-    {
-            if(stringy2[3] != 'a' && stringy2[3] != 'e' && stringy2[3] != 'i' && stringy2[3] != 'o' && stringy2[3] != 'u')
-            {
-                stringy2[4] = vowel2;
-            }
-    }   
+
+}//end outer for
+   
         
     
     document.getElementById("demo5").innerHTML = stringy2[4];
     
-}
+}//end function
 
     
     
