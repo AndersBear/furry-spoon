@@ -289,7 +289,7 @@ for(var W_count=1; W_count<6; W_count++)
      
  if(W_count==1 && L_count==1)
      
- {stringy2 += String.fromCharCode(random_number2).toUpperCase();}
+ {stringy2 += String.fromCharCode(random_number2).toUpperCase();}  //capitalize the first word's first letter
      
  if(L_count==2 && vowel2=="a")
  {stringy2 += String.fromCharCode(97);}
@@ -301,7 +301,8 @@ for(var W_count=1; W_count<6; W_count++)
  {stringy2 += String.fromCharCode(111);}
  else if(L_count==2 && vowel2=="u")
  {stringy2 += String.fromCharCode(117);}
- else
+ 
+ if(L_count > 2)
  {
      
      for(var i=0; i<5; i++)
@@ -325,7 +326,7 @@ for(var W_count=1; W_count<6; W_count++)
              stringy2 += String.fromCharCode(random_number2);    //add it to string, but...
              C_count++;                                          //increment the consonant count
          }
-  }//end final else       
+  }//end final if     
      
      
      
