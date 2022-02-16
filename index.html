@@ -293,25 +293,26 @@ for(var W_count=1; W_count<6; W_count++)
  if(L_count==2)
      switch(vowel2)
      {
-        case("a"):
+        case('a'):
          stringy2 += String.fromCharCode(97);
          break;
-        case("e"):
+        case('e'):
          stringy2 += String.fromCharCode(101);
          break;
-        case("i"):
+        case('i'):
          stringy2 += String.fromCharCode(105);
          break;
-        case("o"):
+        case('o'):
          stringy2 += String.fromCharCode(111);
          break;
-        case("u"):
+        case('u'):
          stringy2 += String.fromCharCode(117);
      }
      
  
  if(L_count > 2)
  {
+     isVowel = "false";      //reset isVowel
      
      for(var i=0; i<5; i++)
      {
@@ -347,7 +348,7 @@ stringy2 += ' ';
    
         
     
-    document.getElementById("demo5").innerHTML = stringy2[4];
+    document.getElementById("demo5").innerHTML = stringy2;
     
 }//end function
 
