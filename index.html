@@ -303,7 +303,6 @@ for(var W_count=1; W_count<6; W_count++)
  {stringy2 += String.fromCharCode(117);}
  else
  {
-     C_count = 1;
      
      for(var i=0; i<5; i++)
      {
@@ -313,8 +312,10 @@ for(var W_count=1; W_count<6; W_count++)
              
          if (isVowel == "true")
              stringy2 += String.fromCharCode(random_number2);  //add it to the string
+         
+         isVowel = "false";          //it must be a a consonant
      
-         else if(C_count == 2)       // a second consecutive consonant                     
+         else if(C_count == 2)       //is it a second consecutive consonant?                     
          {
              stringy2 += vowel2;    //add a vowel instead
              C_count = 0;           //reset consonant count
