@@ -275,7 +275,7 @@ stringy += '.';
     function Animate2(vowel2)    		
 {     
     var random_number2;
-    var stringy2 = '';
+    var stringy2;
     var C_count = 0;
     //var vowelArray = ['a', 'e', 'i', 'o', 'u'];
     var vowelArrayInNumbers = [97,101,105,111,117];
@@ -288,19 +288,27 @@ for(var W_count=1; W_count<6; W_count++)
  random_number2 = Math.floor((Math.random() * 26) + 97);
      
  if(W_count==1 && L_count==1)
-     
  {stringy2 += String.fromCharCode(random_number2).toUpperCase();}  //capitalize the first word's first letter
      
- if(L_count==2 && vowel2=="a")
- {stringy2 += String.fromCharCode(97);}
- else if(L_count==2 && vowel2=="e")
- {stringy2 += String.fromCharCode(101);}
- else if(L_count==2 && vowel2=="i")
- {stringy2 += String.fromCharCode(105);}
- else if(L_count==2 && vowel2=="o")
- {stringy2 += String.fromCharCode(111);}
- else if(L_count==2 && vowel2=="u")
- {stringy2 += String.fromCharCode(117);}
+ if(L_count==2)
+     switch(vowel2)
+     {
+        case("a"):
+         stringy2 += String.fromCharCode(97);
+         break;
+        case("e"):
+         stringy2 += String.fromCharCode(101);
+         break;
+        case("i"):
+         stringy2 += String.fromCharCode(105);
+         break;
+        case("o"):
+         stringy2 += String.fromCharCode(111);
+         break;
+        case("u"):
+         stringy2 += String.fromCharCode(117);
+     }
+     
  
  if(L_count > 2)
  {
