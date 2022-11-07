@@ -257,9 +257,16 @@ Ye old geeky number-guessing game:<br><br>
 <option value="9">9</option>
 <option value="10">10</option>
 </select>
-&nbsp;&nbsp;Pick a number between 1 and <span id="upper_limit">3</span>&nbsp;(Write it down!)<br><br>
-			
-			 	
+&nbsp;&nbsp;Pick a number between 1 and <span id="upper_limit">3</span>&nbsp;(Write it down!)<br><br><br>
+		
+Is your number &nbsp;
+				
+<input type="button" value="higher" onClick="higher();"></button>
+
+&nbsp; or &nbsp;
+				
+<input type="button" value="lower" onClick="lower();"></button>&nbsp;&nbsp;?
+				 	
 <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;first guess:   <span id="guess">  </span></h3>
 <h3 id="headerWords">&nbsp;second guess:   <span id="guess">  </span></h3>				 
 <h3 style=visibility:hidden id="headerWords">&nbsp;&nbsp;&nbsp;&nbsp;third guess:   <span id="guess">  </span></h3>		
@@ -271,14 +278,7 @@ Ye old geeky number-guessing game:<br><br>
 <h3 style=visibility:hidden id="headerWords">&nbsp;&nbsp;&nbsp;ninth guess:   <span id="guess">  </span></h3>
 <h3 style=visibility:hidden id="headerWords">&nbsp;&nbsp;&nbsp;tenth guess:   <span id="guess">  </span></h3>
 			
-<br><br>Is your number &nbsp;
-				
-<input type="button" value="higher" onClick="higher();"></button>
 
-&nbsp; or &nbsp;
-				
-<input type="button" value="lower" onClick="lower();"></button>&nbsp;&nbsp;?
-			
 <br><br>
 							     
 <script src="NumberGuess.js" charset="utf-8"></script>
