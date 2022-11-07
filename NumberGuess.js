@@ -31,24 +31,32 @@ const headerSentence = document.querySelectorAll('#headerWords')    //header
 
 
 numGuesses.onchange = function()
-
 {
+
+
+document.getElementById("high").disabled = false
+document.getElementById("low").disabled = false
 
  upper_limit_num.textContent = ((Math.pow(2, numGuesses.value))-1)
 
 //initialize all vars and clear all subsequent headers
 currentGuessOrdinal = 0
 
-for(var i=0; i<9; i++)  
+for(var i=0; i<=8; i++)  
  {
+	
 	headerSentence[i].style = 'visibility:hidden'
 	guessDisplay[i].textContent = ""
+	guessDisplay[9].textContent = ""   //the indices differ for the two html arrays [0-8], [0-9]
   } 
 
   //alert("after for loop") not happening on first html page, why? No headerSentence id tag found CRASH?
 
+//alert(guessDisplay[8].textContent)
+//says it's empty, but when change to 10 prev val still there
 
-currentGuess = (Math.pow(2, numGuesses.value) / 2) 
+
+currentGuess = Math.pow(2, numGuesses.value) / 2 
   
 currentDiff = currentGuess / 2
   
@@ -98,6 +106,17 @@ guessDisplay[currentGuessOrdinal].textContent = currentGuess
    
 currentDiff = currentDiff/2
 
+
+//alert("currentGuessOrdinal: " + currentGuessOrdinal)
+//alert("numGuesses: " + numGuesses.value)
+
+
+if (currentGuessOrdinal == (numGuesses.value-1))
+{
+  document.getElementById("high").disabled = true
+  document.getElementById("low").disabled = true
+}
+
 }
 
 
@@ -124,6 +143,14 @@ guessDisplay[currentGuessOrdinal].textContent = currentGuess
 //game over, do a reset
  
 currentDiff = currentDiff/2
+
+
+
+if (currentGuessOrdinal == (numGuesses.value-1))
+{
+  document.getElementById("low").disabled = true
+  document.getElementById("high").disabled = true
+}
 
 }
 
