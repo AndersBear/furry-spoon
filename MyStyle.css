@@ -15,7 +15,12 @@ h2 {font-size: 14; font-family: Comic;}
 
 body 
 { background: url("MyGIF.gif") 0 0 / cover;
+  background-attachment: fixed;
   background-color: purple}
+
+
+
+
 
 P {color: lawngreen}
 P2 {color: black}
