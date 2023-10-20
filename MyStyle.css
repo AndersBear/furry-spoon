@@ -44,6 +44,7 @@ P2 {color: black}
     border-width: 10px;
     padding: 8px 16px;
     border-color: black;
+    border-radius: 25px;  
 }
 
 
@@ -73,6 +74,7 @@ figcaption {color: lawngreen}
   position: fixed;
   top: 1%;
   left: 1%;
+  border-radius: 5px;  
 }
 
 /* The sidebar menu */
@@ -87,6 +89,7 @@ figcaption {color: lawngreen}
   /* overflow-x: hidden;  Disable horizontal scroll */
   padding-top: 20px;
   padding-bottom: 20px;
+  border-radius: 5px;  
 }
 
 /* The navigation menu links */
@@ -161,17 +164,17 @@ figcaption {color: lawngreen}
  .boxed {
   border: 3px solid black;
   padding: 8px 16px;
-  display: inline-block; 
+  display: inline-block;             // fit
   background-color: #D3D3D3;
   font-size: 25px;
   scroll-snap-margin-top: 100px;
   scroll-margin-top: 100px;
-  border-radius: 15px; 
+  border-radius: 15px;               // rounded edges
 }
  .smallboxed{
    width: 200px;
    height: 100px;
-   border: 5px solid black;
+   border: 3px solid black;
    border-radius: 15px;
    padding: 8px 16px;
    background-color: Aliceblue;
@@ -180,9 +183,10 @@ figcaption {color: lawngreen}
  .mediumboxed{
    width: 900px;
    height: 100px;
-   border: 5px solid black;
+   border: 3px solid black;
    padding: 8px 16px;
    background-color: Aliceblue;
+   border-radius: 15px;  
 }
   
 
