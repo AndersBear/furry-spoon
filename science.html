@@ -2,7 +2,7 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="MyStyle.css" />
-  <script src="NumberGuess.js" charset="utf-8"></script>
+  
 </head>
   
 <body>
@@ -554,13 +554,13 @@ Computer science is much more than a field of study.  It is a field of tricks.<b
 
 
   
-let numGuesses = document.getElementById("exPower") 
-                //selecter box
+let numGuesses = document.getElementById("exPower").value    // selector box
+        
 let curGuess = Math.pow(2, numGuesses.value) / 2
 
 let curGuessOrdinal = 0
 let curDiff = curGuess / 2 
-let upper_lim_num = document.getElementById("upper_limit")
+let upper_lim_num = document.getElementById("upper_limit").value 
 
 const guessDisplay = document.querySelectorAll("#guess")            // for each guess 
 
