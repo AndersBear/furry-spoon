@@ -25,7 +25,7 @@ document.getElementById("high").disabled = false
 document.getElementById("low").disabled = false
 
 document.getElementById("upper_limit").innerHTML = ((Math.pow(2, numGuesses.value))-1)
-
+ 
 
 //initialize all vars and clear all subsequent headers
 curGuessOrdinal = 0
