@@ -44,7 +44,7 @@ curGuess = Math.pow(2, numGuesses.value) / 2
   
 curDiff = curGuess / 2
   
-guessDisplay[curGuessOrdinal].textContent = curGuess
+guessDisplay[curGuessOrdinal].innerHTML = curGuess
 
 
 
@@ -52,7 +52,7 @@ guessDisplay[curGuessOrdinal].textContent = curGuess
 
 
 //span, fill in the first guess
-guessDisplay[curGuessOrdinal].textContent = curGuess
+guessDisplay[curGuessOrdinal].innerHTML = curGuess
 
 
 
@@ -67,7 +67,7 @@ function higher()
 curGuess = curGuess + curDiff  // going upward, take curGuess and add curDiff to it	
 curGuessOrdinal++
 		
-guessDisplay[curGuessOrdinal].textContent = curGuess
+guessDisplay[curGuessOrdinal].innerHTML = curGuess
  
  
 //if (currentGuessOrdinal = numGuesses)
@@ -105,7 +105,7 @@ curGuess = curGuess - (curDiff)
 	//going downward	
 curGuessOrdinal++
 		
-guessDisplay[curGuessOrdinal].textContent = curGuess
+guessDisplay[curGuessOrdinal].innerHTML = curGuess
   
 //if (curGuessOrdinal = numGuesses)
 		
