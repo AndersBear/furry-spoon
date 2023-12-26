@@ -18,7 +18,7 @@ const guessDisplay = document.querySelectorAll("#guess")            //textarea f
 //or just tell them to refresh the page
 
 
-numGuesses.onchange = function()
+function changed()  
 {
  
 document.getElementById("high").disabled = false
