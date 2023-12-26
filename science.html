@@ -273,7 +273,7 @@ Wireless signal blocking(?):<br>
 <img src="crossword92.jpg" width=700 height=800></img><br>
           Enjoy!<br><br><br><br>
 
-<!--
+
 Ye old geeky number-guessing game:<br><br>
 
 <select name="exPower" id="exPower">
@@ -289,26 +289,25 @@ Ye old geeky number-guessing game:<br><br>
 </select>
 &nbsp;&nbsp;Pick a number between 1 and <span id="upper_limit">3</span>, inclusive.&nbsp;(Write it down, dork!)<br><br>
 		
-
 				 	
-<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;first guess:   <span id="guess">  </span></h3>
-<h3 id="headerWords">&nbsp;second guess:   <span id="guess">  </span></h3>				 
-<h3 style=visibility:hidden id="headerWords">&nbsp;&nbsp;&nbsp;&nbsp;third guess:   <span id="guess">  </span></h3>		
-<h3 style=visibility:hidden id="headerWords">&nbsp;&nbsp;fourth guess:   <span id="guess">  </span></h3>			 	
-<h3 style=visibility:hidden id="headerWords">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fifth guess:   <span id="guess">  </span></h3>
-<h3 style=visibility:hidden id="headerWords">&nbsp;&nbsp;&nbsp;&nbsp;sixth guess:   <span id="guess">  </span></h3>
-<h3 style=visibility:hidden id="headerWords">seventh guess:   <span id="guess">  </span></h3>
-<h3 style=visibility:hidden id="headerWords">&nbsp;&nbsp;eighth guess:   <span id="guess">  </span></h3>
-<h3 style=visibility:hidden id="headerWords">&nbsp;&nbsp;&nbsp;ninth guess:   <span id="guess">  </span></h3>
-<h3 style=visibility:hidden id="headerWords">&nbsp;&nbsp;&nbsp;tenth guess:   <span id="guess">  </span></h3>
+1st guess:   <span class="smallboxed" id="guess">  </span><br><br>
+2nd guess:   <span class="smallboxed" id="guess">  </span><br><br>				 
+3rd guess:   <span class="smallboxed" id="guess">  </span><br><br>				
+4th guess:   <span class="smallboxed" id="guess">  </span><br><br>			 	
+5th guess:   <span class="smallboxed" id="guess">  </span><br><br>				 
+6th guess:   <span class="smallboxed" id="guess">  </span><br><br>			
+7th guess:   <span class="smallboxed" id="guess">  </span><br><br>
+8th guess:   <span class="smallboxed" id="guess">  </span><br><br>
+9th guess:   <span class="smallboxed" id="guess">  </span><br><br>
+10th guess:  <span class="smallboxed" id="guess">  </span><br><br>
+
 
 Is your number &nbsp;			
 <input id="high" type="button" value="higher" onClick="higher();"></button>
 &nbsp; or &nbsp;				
 <input id="low" type="button" value="lower" onClick="lower();"></button>&nbsp;&nbsp;?<br><br>		
--->
 
-	  
+  
 
 <br><br><br>
 
@@ -524,128 +523,13 @@ Computer science is much more than a field of study.  It is a field of tricks.<b
 	 ~  Name That Movie, starring Robert Carradine and Anthony Edwards<br><br>
  </div><br><br>
   
-
-  
-  
 </div>
 
 
 <script type="text/javascript">
-  
-  /*
 
-$(function(){
-
-$image = $('#xy');
-imgPos = [
-    $image.offset().left,
-    $image.offset().top,
-    $image.offset().left + $image.outerWidth(),
-    $image.offset().top + $image.outerHeight()
-];
-
-$image.mousemove(function(e){
-  $('#coords').html((e.pageX-imgPos[0]) +', '+ (e.pageY-imgPos[1]));
-  
-  $('#coords').text('X: ' + X + ', Y: ' + Y);
-  
-  document.getElementById("#x_coord").innerHTML = X;
-  document.getElementById("#y_coord").innerHTML = Y;
-  
-});
-  
-});
-  
-  
-   $(document).ready(function() {
-        $('#xy').click(function(e) {
-            var offset = $(this).offset();
-            var X = (e.pageX - offset.left);
-            var Y = (e.pageY - offset.top);
-            $('#coords').text('X: ' + X + ', Y: ' + Y);
-        });
-    });
-  
-  $(document).ready(function() {
-        $('#xy').on("mousemove", function(e) {
-            var offset = $(this).offset();
-            var X = (e.pageX - offset.left);
-            var Y = (e.pageY - offset.top);
-            $('#coords').text('X: ' + X + ', Y: ' + Y);
-        });
-    });
-  
-  
-  */
-  
-  
-  
-  
   function showCoords(event) {
-    
-    //var testDiv = document.getElementById("test");
-    //var demoDiv = document.getElementById("demo");
-    
-  //document.getElementById("coords").innerHTML = "offsetLeft: " + xy.offsetLeft + "offsetTop: " + xy.offsetTop;
-    
-    //when page is scrolled, .offsetTop will be different
-    
-    
-    /*
-    
-    var bodyRect = document.body.getBoundingClientRect();
-    var elemRect = element.getBoundingClientRect();
-    //var x = (event.clientX - xy.offsetLeft);
-    var V_offset = (elemRect.top - bodyRect.top);
-    var y = (event.clientY + V_offset);
-    //alert('Element is ' + V_offset + ' vertical pixels from <body>');
-    var H_offset = elemRect.left - bodyRect.left;
-    var x = (event.clientX + H_offset);
-    //var y = (event.clientY - xy.offsetTop);
-    
-    //alert('Element is ' + H_offset + ' horizontal pixels from <body>');
-    
-    var coordins = "X coord: " + x + ", Y coord: " + y;
-    document.getElementById("coords2").innerHTML = coordins;  
-    
-    */
-    
-    
-          
-    /* WORKS, but not after scrolling (shows negative values)
-  var x = (event.clientX - xy.offsetLeft);
-  //var x = event.pageX - this.offsetLeft
-  var y = (event.clientY - xy.offsetTop);
-  var coordins = "X coord: " + x + ", Y coord: " + y;
-  document.getElementById("coords2").innerHTML = coordins;  
-    */
-    
-    
-    //try this code copied from StackOverflow:
-    
-    //(relative to another element)
-    //var bodyRect = document.body.getBoundingClientRect(),
-    //var elemRect = element.getBoundingClientRect(),
-    //var V_offset = elemRect.top - bodyRect.top;
 
-//alert('Element is ' + V_offset + ' vertical pixels from <body>'
-    
-    /*
-    
-    //(absolute)
-    var rect = element.getBoundingClientRect();
-    console.log(rect.top, rect.right, rect.bottom, rect.left);
-    
-    
-    var x = (event.clientX - xy.offsetLeft);
-    var y = ((event.clientY - xy.offsetTop) + rect.top);
-    var coordins = "X coord: " + x + ", Y coord: " + y;
-    document.getElementById("coords2").innerHTML = coordins;  
-    
-    */
-    
-    
-    
     //code from developer.mozilla.org 
     
     function getYPosition() 
@@ -664,45 +548,7 @@ $image.mousemove(function(e){
     var coordins = "X coord: " + x + ", Y coord: " + y;
     document.getElementById("coords2").innerHTML = coordins;  
     
-    
-     
-    
-    //also from StackOverflow
-    
-    /*
-    function getOffset(el) 
-    {
-     const rect = el.getBoundingClientRect(); 
-     //getBoundingClientRec() gets position of element relative to viewing window
-     return {left: rect.left + window.scrollX, top: rect.top + window.scrollY};
-    } //end of function getOffset()
-    
-    
-    //getOffset(element).top;
-    //getOffset(xy).top:
-    */
-    
-    
-    
-    
-    
-    
-    //yet another from StackOverflow
-    
-    //window.scrollY + document.querySelector('#elementId').getBoundingClientRect().top   // Y
-    //window.scrollX + document.querySelector('#elementId').getBoundingClientRect().left  // X
-    
-    
-    
-    
-  } //end of function ShowCoords()
-  
-  
-  
-  
-  
-  
-    
+  } //end of function ShowCoords()     
   
 </script>
 
