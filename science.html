@@ -274,7 +274,7 @@ Wireless signal blocking(?):<br>
           Enjoy!<br><br><br><br>
 
 
-Ye old geeky number guessing game:<br><br>
+Ye old geeky number guessing game: &nbsp;&nbsp(still need to clear board if player selects same number game)<br><br>
 
 <select name="exPower" id="exPower" onChange="changed()">
 <option value="2">2</option>
@@ -578,7 +578,7 @@ document.getElementById("low").disabled = false
 document.getElementById("upper_limit").innerHTML = ((Math.pow(2, numGuesses.value))-1)
  
 
-//initialize all vars and clear all subsequent headers
+//initialize all vars
 curGuessOrdinal = 0
 
 for(var i=0; i<=9; i++)  
@@ -588,8 +588,6 @@ for(var i=0; i<=9; i++)
 
 
 
-//alert(guessDisplay[8].textContent)
-//says it's empty, but when change to 10 prev val still there
 
 curGuess = Math.pow(2, numGuesses.value) / 2 
   
@@ -618,16 +616,11 @@ curGuessOrdinal++
 guessDisplay[curGuessOrdinal].innerHTML = curGuess
  
  
-//if (currentGuessOrdinal = numGuesses)
-		 
+//if (currentGuessOrdinal = numGuesses)		 
 //game over, do a reset
  
    
 curDiff = curDiff/2
-
-
-//alert("currentGuessOrdinal: " + curGuessOrdinal)
-//alert("numGuesses: " + numGuesses.value)
 
 
 if (curGuessOrdinal == (numGuesses.value-1))
@@ -652,8 +645,7 @@ curGuessOrdinal++
 		
 guessDisplay[curGuessOrdinal].innerHTML = curGuess
   
-//if (curGuessOrdinal = numGuesses)
-		
+//if (curGuessOrdinal = numGuesses)		
 //game over, do a reset
  
 curDiff = curDiff/2
