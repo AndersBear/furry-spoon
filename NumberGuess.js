@@ -24,7 +24,7 @@ numGuesses.onchange = function()
 document.getElementById("high").disabled = false
 document.getElementById("low").disabled = false
 
-upper_lim_num.textContent = ((Math.pow(2, numGuesses.value))-1)
+document.getElementById("upper_limit").innerHTML = ((Math.pow(2, numGuesses.value))-1)
 
 
 //initialize all vars and clear all subsequent headers
