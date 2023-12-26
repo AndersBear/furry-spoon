@@ -7,7 +7,7 @@ let curGuessOrdinal = 0
 let curDiff = curGuess / 2 
 let upper_lim_num = document.getElementById("upper_limit")
 
-const guessDisplay = document.querySelectorAll("#guess")            //textarea for each guess 
+const guessDisplay = document.querySelectorAll("#guess")            // for each guess 
 
 
 
@@ -32,7 +32,7 @@ curGuessOrdinal = 0
 
 for(var i=0; i<=9; i++)  
  {
-	guessDisplay[i].textContent = ""
+	guessDisplay[i].innerHTML = ""
   } 
 
 
