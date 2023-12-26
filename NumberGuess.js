@@ -1,13 +1,13 @@
 
-let numGuesses = document.getElementById('exPower') 
+let numGuesses = document.getElementById("exPower") 
                 //selecter box
 let curGuess = Math.pow(2, numGuesses.value) / 2
 
 let curGuessOrdinal = 0
 let curDiff = curGuess / 2 
-let upper_lim_num = document.getElementById('upper_limit')
+let upper_lim_num = document.getElementById("upper_limit")
 
-const guessDisplay = document.querySelectorAll('#guess')            //textarea for each guess 
+const guessDisplay = document.querySelectorAll("#guess")            //textarea for each guess 
 
 
 
