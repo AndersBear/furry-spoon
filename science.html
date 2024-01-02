@@ -625,7 +625,7 @@ Computer science is much more than a field of study.  It is a field of tricks.<b
     //WORKS for scrolling, December 27, 2021:
     var x = (event.clientX - xy.offsetLeft);
     //var y = ((event.clientY - xy.offsetTop) + getOffset(xy).top);
-    var y = ((event.clientY - xy.offsetTop) + getYPosition());
+    var y = parseInt((event.clientY - xy.offsetTop) + getYPosition());
     var coordins = "X coord: " + x + ", Y coord: " + y;
     document.getElementById("coords2").innerHTML = coordins;  
     
