@@ -260,7 +260,12 @@
             <a href="https://www.eightyeightynine.com/music/nena-99luftballoons.html">Who knew German could sound so good?</a><br><br>
         </div><br><br>  
 
-        
+
+        <div class="boxed"><br>
+        Compliment Generator:<br>
+        <button class="button1" onclick="GenerateComp()")">Generate</button>&nbsp;            
+        <font size=7><p2 id="beauty">I love your <span id="bodypart">_________</span>. They are very <span id="beautyword">_______</span>.</p2></font>          
+        </div><br><br>  
 
         
         
@@ -472,6 +477,36 @@ stringy2 += ' ';
     
 }//end function
 
+
+
+const bodyparts = ["eyes", "eyelashes", "eyebrows", "hands", "legs", "teeth", "shoulders", "lips"]
+
+const beautifuls = ["adorable","alluring","angelic","appealing","attractive","beauteous","beautiful","beckoning",
+                    "becoming","captivating","charming","comely","cute","dainty","dazzling","delightful","divine",
+                    "elegant","enchanting","engaging","enthralling","enticing","exquisite","eye-catching","fair",
+                    "fascinating","fetching","flattering","foxy","glamorous","glorious","good-looking","gorgeous",
+                    "graceful","grand","handsome","heavenly","inviting","lovely","luring","magnetic","magnificent",
+                    "mesmeric","photogenic","picturesque","pleasant","pleasing","prepossessing","pretty","provocative",
+                    "radiant","ravishing","resplendent","seductive","shapely","sightly","snazzy","splendid",
+                    "splendiferous","statuesque","stunning","sublime","superb","tantalizing","teasing","tempting",
+                    "well-formed","winsome","wonderful"]
+
+function GenerateComp()    		
+{     
+  var B_rand_num;
+  var BP_rand_num;
+    
+  BP_rand_num = Math.floor((Math.random() * 8));  
+  document.getElementById("bodypart").innerHTML = bodyparts[BP_rand_num];
+  
+  B_rand_num = Math.floor((Math.random() * 69)); 
+  document.getElementById("beautyword").innerHTML = beautifuls[B_rand_num];
+
+}
+
+
+
+    
     
     
 </script>
