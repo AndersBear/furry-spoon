@@ -92,42 +92,42 @@ for(var count=1; count<6; count++)     // generate 5 notes
  switch(random_number)
  {     
      case 0:
-     setTimeout(() => document.getElementById("a5").play(), 500 * count);
+     setTimeout(() => document.getElementById("a5").play(), 300 * count);
      document.getElementById("Clef").append(A);
      break;
 
      case 1:
-     setTimeout(() => document.getElementById("b5").play(), 500 * count);
+     setTimeout(() => document.getElementById("b5").play(), 300 * count);
      document.getElementById("Clef").append(B);
      break;
 
      case 2:
-     setTimeout(() => document.getElementById("c5").play(), 500 * count);
+     setTimeout(() => document.getElementById("c5").play(), 300 * count);
      document.getElementById("Clef").append(C);
      break;
 
      case 3:
-     setTimeout(() => document.getElementById("d5").play(), 500 * count);
+     setTimeout(() => document.getElementById("d5").play(), 300 * count);
      document.getElementById("Clef").append(D);
      break;
 
      case 4:
-     setTimeout(() => document.getElementById("e5").play(), 500 * count);
+     setTimeout(() => document.getElementById("e5").play(), 300 * count);
      document.getElementById("Clef").append(E);
      break;
 
      case 5:
-     setTimeout(() => document.getElementById("f5").play(), 500 * count);
+     setTimeout(() => document.getElementById("f5").play(), 300 * count);
      document.getElementById("Clef").append(F);
      break;
 
      case 6:
-     setTimeout(() => document.getElementById("g5").play(), 500 * count);
+     setTimeout(() => document.getElementById("g5").play(), 300 * count);
      document.getElementById("Clef").append(G);
      break;
 
      default:
-     setTimeout(() => document.getElementById("a5").play(), 500 * count);
+     setTimeout(() => document.getElementById("a5").play(), 300 * count);
      document.getElementById("Clef").append(A);
 
  }//end switch
