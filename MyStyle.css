@@ -53,15 +53,20 @@ P2 {color: black}
 
 
 
- .Bars {
-     display: flex;
-     column-gap: 0px;
+ .bars {
      border: 6px solid black;
      border-style: double;
-     padding: 8px 16px;             
+     padding: 8px 16px;
+     display: flex;
+     column-gap: 0px;             
      background-color: #D3D3D3;
+     font-size: 25px;
+     scroll-snap-margin-top: 100px;
+     scroll-margin-top: 100px;
      border-radius: 15px;               // rounded edges
-  }
+ }
+
+
 
 
 figure {
