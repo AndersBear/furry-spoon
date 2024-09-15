@@ -53,15 +53,6 @@ P2 {color: black}
 
 
 
- .bars {
-   
-     display: flex;
-     column-gap: 0px;             
-    
- }
-
-
-
 
 figure {
   //border: 3px solid black;
@@ -165,6 +156,13 @@ figcaption {color: lawngreen}
   cursor: default;
 }
 
+ .bars {
+   
+     display: flex;
+     column-gap: 0px;             
+    
+ }
+
  .boxed {
   border: 6px solid black;
   border-style: double;
@@ -176,6 +174,8 @@ figcaption {color: lawngreen}
   scroll-margin-top: 100px;
   border-radius: 15px;               // rounded edges
 }
+
+
  .smallboxed{
    width: 200px;
    height: 100px;
