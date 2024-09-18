@@ -14,7 +14,7 @@ h2 {font-size: 14; font-family: Comic;}
 
 body 
 { 
-  background-color: Navy
+  /* background-color: Navy */
   background: linear-gradient(90deg, rgb(0, 255, 0), rgb(0, 0, 255));
 }
 
