@@ -21,7 +21,7 @@ const rockers = {
     "Kurt Kobain (Nirvana)": 1967,
     "Chris Barron (Spin Doctors)": 1968,
     "Layne Staley (Alice in Chains)": 1967,
-    "Chris Cornell (Soundgarden, Audioslave)": 1964,
+    "Chris Cornell (Soundgarden)": 1964,
     "Scott Weiland (STP)": 1967,
     "Royston Langdon (Spacehog)": 1972,
     "Michael Stipe (R.E.M.)": 1960,
@@ -32,7 +32,7 @@ const rockers = {
     "Dave Mustaine (Megadeth)": 1961,
     "Ian Astbury (the Cult)": 1962,
     "Rivers Cuomo (Weezer)": 1970,
-    "Glen Phillips (Toad the Wet Sprocket)": 1970,
+    "Glen Phillips (Toad the Wet ...)": 1970,
     "Beck": 1970,
     "Nick Hexum (311)": 1970,
     "Brad Arnold (3 Doors Down)": 1978,
@@ -40,10 +40,10 @@ const rockers = {
     "Sully Erna (Godsmack)": 1968,
     "Thom Yorke (Radiohead)": 1968,
     "Gavin Rossdale (Bush)": 1965,
-    "Andy Kuehl (drifter, drinker, womanizer)": 1971,
+    "Andy Kuehl (drifter, drinker)": 1971,
     "Jimmy Fallon (The Roots)": 1974,
     "SHAQ (The NBA)": 1972,
-    "Brad Wilk (Rage Against the Machine)": 1968,
+    "Brad Wilk (Rage Against the ...)": 1968,
     "Kevin Griffin (Better Than Ezra)": 1968,
     "Chris Traynor (Bush)": 1973,
     "Ed Roland (Collective Soul)": 1963,
@@ -75,7 +75,7 @@ const rockers = {
     "Brian Vander Ark (The Verve Pipe)": 1964,
     "Adam Duritz (Counting Crows)": 1964,
     "Jake Clemons (The E Street Band)": 1980,
-    "Jay Weinberg (Slipknot, Suicidal Tendencies)": 1990
+    "Jay Weinberg (Slipknot)": 1990
     
     };
 
