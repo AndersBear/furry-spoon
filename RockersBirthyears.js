@@ -100,7 +100,7 @@ let submittedAlready = false;
 const getRocker = () => {   
      
   //no year displayed:
-  if (rocker.textContent != "" && yearInput.textContent == ""){
+  if (yearInput.textContent == ""){
     alert("No skipping.  Enter a year and click Submit.");
     return;
    }
