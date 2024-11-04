@@ -99,16 +99,10 @@ let submittedAlready = false;
 
 const getRocker = () => {   
      
-  //no year displayed:
-  if (yearInput.textContent == ""){
-    alert("No skipping.  Enter a year and click Submit.");
-    return;
-   }
-
-  if (yearInput.textContent != "" && !submittedAlready){
+if (yearInput.textContent != "" && !submittedAlready){
     alert("Click Submit before Go.");
     return; 
-  }
+}
 
    if (usedArr.length == 0)                                //when usedArr reaches NUM_PEOPLE, game over
    {
