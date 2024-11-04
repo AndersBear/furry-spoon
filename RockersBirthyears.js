@@ -99,16 +99,21 @@ let submittedAlready = false;
 
 const getRocker = () => {   
      
-       //no year displayed:
-       if (rocker.textContent != "" && yearInput.value == ""){
-        alert("No skipping.  Enter a year.");
-        return;
-       }
+  //no year displayed:
+  if (rocker.textContent != "" && yearInput.textContent == ""){
+    alert("No skipping.  Enter a year and click Submit.");
+    return;
+   }
+
+  if (yearInput.textContent != "" && !submittedAlready){
+    alert("Click Submit before Go.");
+    return; 
+  }
 
    if (usedArr.length == 0)                                //when usedArr reaches NUM_PEOPLE, game over
    {
-       alert("Game Over.  All out of rockers.  Go country.");
-       return;
+     alert("Game Over.  All out of rockers.  Go country.");
+     return;
    }
 
 yearInput.value = "";
