@@ -238,49 +238,6 @@
       </div><br><br>  
 
 
-      <div class="boxed"><br>
-      <iframe width="914" height="514" 
-          src="https://www.youtube.com/embed/PQG3KqbkQnc" title="SPEND 24 HOURS WITH ME | SKAI JACKSON" 
-          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
-          picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><br> 
-      </div><br><br>  
-
-      <div class="boxed"><br>
-          <img src="Andrew_Jackson.jpg"><br><br>
-      </div><br><br>  
-
-      <div class="boxed"><br>
-           <object data="GRE_vocab.pdf" type="application/pdf" width="750px" height="750px">
-              <embed src="GRE_vocab.pdf" type="application/pdf">
-              </embed>
-           </object>
-       </div><br><br>  
-
-        <div class="boxed"><br>
-            <a href="https://www.eightyeightynine.com/music/nena-99luftballoons.html">Who knew German could sound so good?</a><br><br>
-        </div><br><br>  
-
-
-        <div class="boxed"><br>
-        Compliment Generator:<br>
-        <button class="button1" onclick="GenerateComp()")">Generate</button>&nbsp;            
-        <font size=7><p2 id="beauty">I love your <span id="bodypart">_________</span>. &nbsp; They're <span id="beautyword">_______</span>.</p2></font><br><br>         
-        </div><br><br>  
-
-        <div class="boxed"><br>
-           <iframe width="446" height="446" 
-               src="https://www.youtube.com/embed/ghWH_un3Q5g" title="Spellbound" frameborder="0" 
-               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-               referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><br>  
-        </div><br><br>
-
-        <div class="boxed"><br>
-            compiler:  an app that checks the language of another app<br><br>
-        </div><br><br> 
-
-        
-        
-        
         
    </div>
                                                   
@@ -489,31 +446,6 @@ stringy2 += ' ';
 }//end function
 
 
-
-const bodyparts = ["eyebrows", "eyelashes",  "eyes", "hands", "legs", "lips", "shoulders", "teeth"]
-
-const beautifuls = ["adorable","alluring","angelic","appealing","attractive","beauteous","beautiful","beckoning",
-                    "becoming","captivating","charming","comely","cute","dainty","dazzling","delightful","divine",
-                    "elegant","enchanting","engaging","enthralling","enticing","exquisite","eye-catching","fair",
-                    "fascinating","fetching","flattering","foxy","glamorous","glorious","good-looking","gorgeous",
-                    "graceful","grand","handsome","heavenly","inviting","lovely","luring","magnetic","magnificent",
-                    "mesmeric","photogenic","picturesque","pleasant","pleasing","prepossessing","pretty","provocative",
-                    "radiant","ravishing","resplendent","seductive","shapely","sightly","snazzy","splendid",
-                    "splendiferous","statuesque","stunning","sublime","superb","tantalizing","teasing","tempting",
-                    "well-formed","winsome","wonderful"]
-
-function GenerateComp()    		
-{     
-  var B_rand_num;
-  var BP_rand_num;
-    
-  BP_rand_num = Math.floor((Math.random() * 8));  
-  document.getElementById("bodypart").innerHTML = bodyparts[BP_rand_num];
-  
-  B_rand_num = Math.floor((Math.random() * 69)); 
-  document.getElementById("beautyword").innerHTML = beautifuls[B_rand_num];
-
-}
 
 
 
