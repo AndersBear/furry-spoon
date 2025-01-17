@@ -1,6 +1,3 @@
-//<script>
-//self.__next_f.push([1,"
-
 class Example extends Phaser.Scene {
     constructor() {
         super();
@@ -455,7 +452,3 @@ const config = {
 };
 
 window.phaserGame = new Phaser.Game(config);
-
-//"])
-//</script>
-
