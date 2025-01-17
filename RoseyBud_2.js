@@ -1,4 +1,4 @@
-class Example extends Phaser.Scene {
+class Example_2 extends Phaser.Scene {
     constructor() {
         super();
         this._isValidatingCheck = false;
@@ -448,7 +448,7 @@ const config = {
     },
     width: 800,
     height: 600,
-    scene: Example
+    scene: Example_2
 };
 
 window.phaserGame = new Phaser.Game(config);
