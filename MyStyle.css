@@ -175,7 +175,7 @@ figcaption {color: lawngreen}
   font-size: 25px;
   scroll-snap-margin-top: 100px;
   scroll-margin-top: 100px;
-  border-radius: 15px;               // rounded edges
+  border-radius: 15px; 
 }
 
 
@@ -195,6 +195,21 @@ figcaption {color: lawngreen}
    padding: 8px 16px;
    background-color: Aliceblue;
    border-radius: 15px;  
+}
+
+ .largeboxed{
+  width: 900px;
+  height: 700px;
+  border: 6px solid black;
+  border-style: double;
+  padding: 8px 16px;
+  display: inline-block;             
+  background-color: #D3D3D3;
+  font-size: 25px;
+  scroll-snap-margin-top: 100px;
+  scroll-margin-top: 100px;
+  border-radius: 15px; 
+  overflow: hidden;
 }
   
 
