@@ -1,4 +1,4 @@
-class Example extends Phaser.Scene {
+class Example_9 extends Phaser.Scene {
     constructor() {
         super();
         this._isValidatingCheck = false;
@@ -435,7 +435,7 @@ class Example extends Phaser.Scene {
     }
 }
 
-const config = {
+const config_9 = {
     type: Phaser.AUTO,
     parent: 'renderDiv',
     scale: {
@@ -444,7 +444,7 @@ const config = {
     },
     width: 800,
     height: 600,
-    scene: Example
+    scene: Example_9
 };
 
-window.phaserGame = new Phaser.Game(config);
+window.phaserGame = new Phaser.Game(config_9);
