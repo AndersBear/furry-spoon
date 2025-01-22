@@ -448,7 +448,7 @@ const config_4 = {
     },
     width: 800,
     height: 600,
-    scene: Example
+    scene: Example_4
 };
 
 window.phaserGame = new Phaser.Game(config_4);
