@@ -52,7 +52,7 @@ class Example_8 extends Phaser.Scene {
                     y + this.squareSize / 2,
                     this.squareSize,
                     this.squareSize,
-                    isLight ? 0x2328f4 : 0x419f4d3
+                    isLight ? 0x2328f4 : 0x2f928e
                 );
 
                 square.setInteractive({
@@ -73,11 +73,11 @@ class Example_8 extends Phaser.Scene {
     initializePieces() {
         // Create temporary visual representations for pieces
         // White pieces
-        this.createPiece(0, 0, 'White', 'King');
-        this.createPiece(3, 1, 'White', 'Rook');
+        this.createPiece(0, 1, 'White', 'King');
+        this.createPiece(4, 1, 'White', 'Rook');
         // Black pieces
         this.createPiece(2, 2, 'Black', 'King');
-        this.createPiece(1, 1, 'Black', 'Rook');
+        this.createPiece(2, 0, 'Black', 'Rook');
     }
     createPiece(row, col, color, type) {
         const x = this.boardOffset.x + col * this.squareSize + this.squareSize / 2;
