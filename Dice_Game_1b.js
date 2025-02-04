@@ -1,4 +1,4 @@
-class SimpleGame extends Phaser.Scene {
+class Craps extends Phaser.Scene {
     constructor() {
         super();
         this.dice1 = null;
@@ -486,13 +486,13 @@ const config = {
     },
     width: 800,
     height: 600,
-    scene: SimpleGame
+    scene: Craps
 };
 
 window.phaserGame = new Phaser.Game(config);
 */
 
-const config = {
+const Craps_config = {
     type: Phaser.AUTO,
     parent: 'renderDiv',
     scale: {
@@ -501,8 +501,8 @@ const config = {
     },
     width: 800,
     height: 600,
-    scene: SimpleGame
+    scene: Craps
 };
 
-window.phaserGame = new Phaser.Game(config);
+window.phaserGame = new Phaser.Game(Craps_config);
 
