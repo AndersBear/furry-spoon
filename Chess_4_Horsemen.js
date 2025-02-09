@@ -285,16 +285,29 @@ class FourHorsemen extends Phaser.Scene {
         if (this.gameOver) {
             return false;
         }
+        // Get the current player's king position
+        const isPlayer1 = this.board[startRow][startCol].text?.isPlayer1;
+
+        // Only check for check-related conditions if checkForCheck is true
+        if (checkForCheck) {
+            const kingPos = this.findKing(isPlayer1);
+            // If the king is in check, only allow moves that resolve the check
+            if (this.isKingInCheck(kingPos.row, kingPos.col, isPlayer1, true)) {
+                if (this.wouldBeInCheck(startRow, startCol, targetRow, targetCol, isPlayer1)) {
+                    return false;
+                }
+            }
+        }
         // Get the piece at the start position
         const startCell = this.board[startRow][startCol];
         if (!startCell || !startCell.piece) {
             return false;
         }
         const piece = startCell.piece;
-        const isPlayer1 = startCell.text?.isPlayer1;
+        const pieceIsPlayer1 = startCell.text?.isPlayer1;
         const targetPiece = this.board[targetRow][targetCol].text;
         // Can't capture your own pieces
-        if (targetPiece && targetPiece.isPlayer1 === isPlayer1) {
+        if (targetPiece && targetPiece.isPlayer1 === pieceIsPlayer1) {
             return false;
         }
         switch (piece) {
@@ -343,6 +356,13 @@ class FourHorsemen extends Phaser.Scene {
     }
     // Check if a move would put or leave own king in check
     wouldBeInCheck(startRow, startCol, targetRow, targetCol, isPlayer1) {
+        // Validate input parameters
+        if (startRow < 0 || startRow >= this.boardHeight ||
+            startCol < 0 || startCol >= this.boardWidth ||
+            targetRow < 0 || targetRow >= this.boardHeight ||
+            targetCol < 0 || targetCol >= this.boardWidth) {
+            return true; // Invalid move would put king in check
+        }
         // Save the complete original state
         const originalStartPiece = this.board[startRow][startCol].piece;
         const originalStartText = this.board[startRow][startCol].text;
@@ -377,19 +397,16 @@ class FourHorsemen extends Phaser.Scene {
 
         return inCheck;
     }
-    isKingInCheck(kingRow, kingCol, isPlayer1) {
+    isKingInCheck(kingRow, kingCol, isPlayer1, skipMoveValidation = false) {
         // Save the current selected piece
         const originalSelected = this.selectedPiece;
-
         // Check all opponent pieces
         for (let row = 0; row < this.boardHeight; row++) {
             for (let col = 0; col < this.boardWidth; col++) {
                 const cell = this.board[row][col];
                 if (!cell || !cell.piece) continue;
-
                 // Only check opponent pieces
                 if (cell.text?.isPlayer1 === isPlayer1) continue;
-
                 // Create temporary piece context
                 this.selectedPiece = {
                     pieceType: cell.piece,
@@ -397,9 +414,30 @@ class FourHorsemen extends Phaser.Scene {
                     row: row,
                     col: col
                 };
+                // Basic move validation without check validation
+                let canAttackKing = false;
 
-                // Check if this piece can attack the king's position
-                const canAttackKing = this.isValidMove(row, col, kingRow, kingCol, false);
+                // Validate move based on piece type without checking for check
+                switch (cell.piece) {
+                    case 'K':
+                        const rowDiffK = Math.abs(kingRow - row);
+                        const colDiffK = Math.abs(kingCol - col);
+                        canAttackKing = rowDiffK <= 1 && colDiffK <= 1;
+                        break;
+                    case 'H':
+                        const rowDiffH = Math.abs(kingRow - row);
+                        const colDiffH = Math.abs(kingCol - col);
+                        canAttackKing = (rowDiffH === 2 && colDiffH === 1) || (rowDiffH === 1 && colDiffH === 2);
+                        break;
+                    case 'Q':
+                        const rowDiffQ = Math.abs(kingRow - row);
+                        const colDiffQ = Math.abs(kingCol - col);
+                        if ((rowDiffQ === colDiffQ || row === kingRow || col === kingCol) &&
+                            this.isPathClear(row, col, kingRow, kingCol)) {
+                            canAttackKing = true;
+                        }
+                        break;
+                }
 
                 if (canAttackKing) {
                     this.selectedPiece = originalSelected;
@@ -466,6 +504,11 @@ class FourHorsemen extends Phaser.Scene {
                 }
             }
         }
+        // Return a default position if king not found (shouldn't happen in normal gameplay)
+        return {
+            row: isPlayer1 ? 0 : this.boardHeight - 1,
+            col: 0
+        };
     }
     isPathClear(startRow, startCol, targetRow, targetCol) {
         const rowDir = targetRow > startRow ? 1 : targetRow < startRow ? -1 : 0;
@@ -508,7 +551,7 @@ const configga = {
     },
     width: 800,
     height: 600,
-    scene: FourHorsemen
+    scene: FourHorsemen 
 };
 
 window.phaserGame = new Phaser.Game(configga);
