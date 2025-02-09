@@ -31,7 +31,7 @@ class FourHorsemen extends Phaser.Scene {
         }).setOrigin(0.5);
         this.updateTurnText();
         // Add status text for check/checkmate/stalemate
-        this.statusText = this.add.text(400, 550, '', {
+        this.statusText = this.add.text(400, 500, '', {
             fontSize: '24px',
             color: '#FFFFFF'
         }).setOrigin(0.5);
