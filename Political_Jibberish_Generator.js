@@ -1,6 +1,6 @@
 const insults = ["abusive", "denigrating", "malignant", "collusive", "libelishtic", "slurrishtical", "slanderishtic", "offensive"]
 
-const politicians = ["assemblykid", "denigratorman", "congresslady", "LocoLegislator", "PrimalSinnator", "sinator", "CabinetMember", "speaker"]
+const politicians = ["AssemblyKid", "DenigratorMan", "CongressLady", "LocoLegislator", "PrimalSinnator", "SinatorSam", "CabinetMember", "SpeakerDude"]
 
 const jib_nouns = ["allegation","attack","authoritarivegetarianism","bamboozlement",
     "blame","bribe","chickenry","coercion","concealment","corruption","debacle",
@@ -13,7 +13,7 @@ const jib_nouns = ["allegation","attack","authoritarivegetarianism","bamboozleme
     "referendimorium","idiology","librarianism","meritocracy","oligarchy","properganda","ratification","illegislation",
     "recumbence","indigenality","fashionism"]
 
-const jib_verbs = ["jerseymander", "capitalize", "compease", "Fedspeak", "autonomonomize", "gorillalalalander", "hardline", "wingify"]
+const jib_verbs = ["jerseymander", "capitalize", "compease", "Fedspeak", "autonomonomize", "gorillalander", "hardline", "wingify"]
 
 const phrases_1 = ["You know ", "We all know ", "I think ", "This "]
 const phrases_2 = ["we must ", "we better ", "we should ", "we will not "]
