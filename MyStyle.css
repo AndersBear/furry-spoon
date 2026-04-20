@@ -383,6 +383,26 @@ th {
     width: 400px;
   }
 
+
+.zoom-container {
+  width: 500px; /* Adjust size */
+  height: 400px;
+  overflow: hidden; /* Crops the zoomed image to the container */
+}
+.zoom-container img {
+  width: 100%;
+  transition: transform .3s ease; /* Smooth transition */
+}
+.zoom-container:hover img {
+  transform: scale(1.5); /* 1.5x zoom level */
+}
+
+
+
+
+
+  
+
  
 }
   
