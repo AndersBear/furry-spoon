@@ -385,8 +385,8 @@ th {
 
 
 .zoom-container {
-  width: 500px; /* Adjust size */
-  height: 400px;
+  width: 700px; /* Adjust size */
+  height: 600px;
   overflow: hidden; /* Crops the zoomed image to the container */
 }
 .zoom-container img {
