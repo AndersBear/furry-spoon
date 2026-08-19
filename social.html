@@ -15,66 +15,6 @@
     <meta name="twitter:image" content="https://serene-jackson.netlify.app/Twitter_share_img_1200x630.png" />
 
 
-    <script>
-
-  function imageZoom(imgID, resultID) {
-  var img, lens, result, cx, cy;
-  img = document.getElementById(imgID);
-  result = document.getElementById(resultID);
-  /* Create lens: */
-  lens = document.createElement("DIV");
-  lens.setAttribute("class", "img-zoom-lens");
-  /* Insert lens: */
-  img.parentElement.insertBefore(lens, img);
-  /* Calculate the ratio between result DIV and lens: */
-  cx = result.offsetWidth / lens.offsetWidth;
-  cy = result.offsetHeight / lens.offsetHeight;
-  /* Set background properties for the result DIV */
-  result.style.backgroundImage = "url('" + img.src + "')";
-  result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) + "px";
-  /* Execute a function when someone moves the cursor over the image, or the lens: */
-  lens.addEventListener("mousemove", moveLens);
-  img.addEventListener("mousemove", moveLens);
-  /* And also for touch screens: */
-  lens.addEventListener("touchmove", moveLens);
-  img.addEventListener("touchmove", moveLens);
-  function moveLens(e) {
-    var pos, x, y;
-    /* Prevent any other actions that may occur when moving over the image */
-    e.preventDefault();
-    /* Get the cursor's x and y positions: */
-    pos = getCursorPos(e);
-    /* Calculate the position of the lens: */
-    x = pos.x - (lens.offsetWidth / 2);
-    y = pos.y - (lens.offsetHeight / 2);
-    /* Prevent the lens from being positioned outside the image: */
-    if (x > img.width - lens.offsetWidth) {x = img.width - lens.offsetWidth;}
-    if (x < 0) {x = 0;}
-    if (y > img.height - lens.offsetHeight) {y = img.height - lens.offsetHeight;}
-    if (y < 0) {y = 0;}
-    /* Set the position of the lens: */
-    lens.style.left = x + "px";
-    lens.style.top = y + "px";
-    /* Display what the lens "sees": */
-    result.style.backgroundPosition = "-" + (x * cx) + "px -" + (y * cy) + "px";
-  }
-  function getCursorPos(e) {
-    var a, x = 0, y = 0;
-    e = e || window.event;
-    /* Get the x and y positions of the image: */
-    a = img.getBoundingClientRect();
-    /* Calculate the cursor's x and y coordinates, relative to the image: */
-    x = e.pageX - a.left;
-    y = e.pageY - a.top;
-    /* Consider any page scrolling: */
-    x = x - window.pageXOffset;
-    y = y - window.pageYOffset;
-    return {x : x, y : y};
-  }
-}
-
-  
-</script>
 
 
 
@@ -115,403 +55,77 @@
     
    
     <div class="boxed"><br> 
-      I was a small, thin, socially naïve honkey<br>
-      wandering through some rough 'hoods,<br>
-      poor, lonely, sometimes aimless and curious,<br> 
-      never once<br>
-      feeling the need for a gun.<br><br>
+     "Men aren't supposed to have curves <br>
+      unless they're Camaros."<br><br> 
     </div><br><br><br><br><br>
 
     <div class="boxed"><br>
-      You should often do the exact opposite of what they tell you to do.<br>
-      You should often be the exact opposite of how they tell you to be.<br>
-      And sometimes their advice is mostly just meant for them.<br><br>
-    </div><br><br><br><br><br>  
+      If there is psychosis, why not also sociosis?<br><br>
+    </div><br><br>
+      <iframe width="695" height="515" 
+        src="https://www.youtube.com/embed/TIe_b7P-qKg" 
+        title="Motörhead – One Track Mind (Official Video)" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+        picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen></iframe><br><br>
+    <div class="boxed"><br><br><br> 
 
     <div class="boxed"><br>
-      Do you ever wonder where India and China put all those people?<br><br>
-    </div><br><br><br><br><br>  
-
-    <div class="boxed"><br>
-      <a href="https://nation.foxnews.com/parkd-with-abby-hornacek/">Abby's Park'd</a><br><br>
-    </div><br><br><br><br>
-
-    <div class="boxed"><br>
-      When I was a young adult, I wanted to be independently wealthy.  Five minutes later, I 
-      re-decided on independent poverty.  Was it the easier way?  Now I'm 55, still living 
-      in poverty.<br><br>
-    </div><br><br><br><br> 
-
-    <div class="boxed"><br>
-      "Gettin' crazy on the waltzers,<br>
-       but it's the life that I choose,<br>
-       Yeah, sing about the sixblade,<br>
-       sing about the switchback<br>
-       and a torture tattoo,"<br><br> 
-      <iframe width="756" height="425" 
-        src="https://www.youtube.com/embed/gAirINwjaxE" title="Dire Straits - Tunnel Of Love (Official Music Video)" 
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
-        picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><br>
-    </div><br><br><br><br>  
-
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-    <div class="boxed"><br>
-      <iframe width="425" height="756" 
-        src="https://www.youtube.com/embed/xvEgcjbhbx4" title="I Melt with You" 
+      "We had no idea you guys were still around."<br><br>
+      <iframe width="687" height="515" 
+        src="https://www.youtube.com/embed/-Y7HDXBVbfc" title="Geico Caveman Commercials" 
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
         gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
-        allowfullscreen></iframe><br><br>
-    </div><br><br><br><br> 
+        allowfullscreen></iframe><br><br> 
+    </div><br><br>
 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-    <div class="boxed"><br>
-      <iframe width="650" height="390" 
-        src="https://www.youtube.com/embed/J-FQqs2sYgs" title="Beggars And Choosers" 
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
-        picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><br>
-    </div><br><br><br><br>
-
-    <div class="boxed"><br>
-      "Her CD changer's full of singers that are mad at their dad,"<br><br>
-      <iframe width="567" height="425" 
-        src="https://www.youtube.com/embed/VGRxmYXi4Io" 
-        title="Bowling For Soup - Girl All The Bad Guys Want (Official Video)" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><br>
-    </div><br><br><br><br>
-
-    <div class="boxed"><br>
-      <a href="https://www.storyblocks.com/resources/blog/what-is-the-difference-between-royalty-free-and-copyright-free">
-        royalty-free vs. copyright-free</a><br><br><br>
-    </div><br><br><br><br>
-
-    <div class="boxed"><br>
-      still trying to figure this out:<br><br>
-      <div class="zoom-container">
-       <img src="unlicensed.png" width="563" height="583" alt="zoomable image"><br><br>
-      </div><br><br> 
-    </div><br><br><br><br>  
-
-    <div class="boxed"><br>
-      still trying to figure out the "zoom" coding, too!<br><br>   
-      <div class="img-zoom-container">
-      <img id="myimage" src="unlicensed.png" width="281" height="291" alt="search result">
-      <div id="myresult" class="img-zoom-result"></div>
-      <script>
-         imageZoom("myimage", "myresult");
-      </script>
+      <div class="boxed"><br>
+        "Women: can't live with 'em, can't live without 'em."<br><br>
       </div><br><br>
-    </div><br><br><br><br><br><br><br>
 
-    <div class="boxed"><br>
-      <iframe width="509" height="280" 
-        src="https://www.youtube.com/embed/ActaDnSdXDA" 
-        title="Bad Company - Medley (In Concert: Merchants Of Cool, 2002)" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><br>  
-    </div> 
+      <div class="boxed"><br>
+        an all-important strategy<br><br>
+        <a href="https://www.foxnews.com/shows/outnumbered">
+        <img src="https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2018/09/1232/358/571a0ada-logo-1280-2x.png?ve=1&tl=1" 
+          width="600" height="200" />
+        </a><br><br>
+      </div><br><br><br><br>
 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="boxed"><br>
+        "CHANGE THE SUBJECT!"<br><br>
+      </div><br><br><br><br>
 
-    <div class="boxed"><br>
-      <iframe width="374" height="219" src="https://www.youtube.com/embed/ibVMjKd2-_c" 
-        title="Wanda Jackson: &quot;Riot in Cell Block # 9&quot; (feat. Jack White)" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><br> 
-    </div><br><br><br><br><br>
-
-    <div class="boxed"><br>
-      "Never doubt that a small group of thoughtful, 
-      committed citizens can change the world; 
-      indeed, it's the only thing that ever has."<br><br>
-      ~  Margaret Mead<br><br>
-    </div><br><br><br><br><br>  
-
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-    <div class="boxed"><br>
-      <iframe width="698" height="402" 
-        src="https://www.youtube.com/embed/uS7j7MyIP_A" title="Lemon Popsicle - Lolipop" 
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
-        picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
-        allowfullscreen></iframe><br><br>
-    </div><br><br><br><br><br>  
-
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-
-    <div class="boxed"><br>
-      <iframe width="635" height="331" 
-        src="https://www.youtube.com/embed/9n4o99mWezA" 
-        title="We&#39;ve Been Misgendering Bigfoot  | Syd &amp; Olivia Talk Sh*t - S3 Ep80" 
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-        gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
-        allowfullscreen></iframe><br><br>
-    </div><br><br><br><br><br><br>  
-    
-    <div class="boxed"><br>
-      It's the classic social pattern:  The gang refuses to give up and the victim (who 
-      usually doesn't mind using a religious metaphor) says,<br>
-      "God bless you disgusting men who study my ass!"<br><br>
-
-      (For me, this happened a long time ago.)<br><br>
-    </div><br><br><br><br><br> 
-
-    <div class="boxed"><br>
-        <iframe width="567" height="425" 
-          src="https://www.youtube.com/embed/LOMtiP9J8Xo" title="Devo - The Complete Truth About De-Evolution - Part 1" 
-          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-          gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
-          allowfullscreen></iframe><br><br> 
-    </div><br><br><br><br>
-
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-    <div class="boxed"><br>
-      from <a href="https://getyarn.io">getyarn</a><br><br>
-      "Weekend at Bernie's"<br>
-       <video width="402" height="281" controls>
-        <source src="BlessYou.mp4" type="video/mp4">
-         Your browser does not support the video tag.
-      </video><br><br>
-    </div><br><br><br><br>  
-
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-    <div class="boxed"><br>
-      <iframe width="484" height="362" 
-        src="https://www.youtube.com/embed/psZeKOcgsCY" title="Last Scene of Singles" 
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-        gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
-        allowfullscreen></iframe><br><br>
-    </div><br><br><br><br><br>
-
-    <div class="boxed"><br>
-      "Thinking about the extreme is completely different from acting on it."<br><br>
-    </div><br><br><br><br><br>  
-
-    <div class="boxed"><br><br>
-      "I had a guy last week, he gave me religious directions.  You ever get these guys?
-        He says, 'You go down here to St. Anne's Church, you make your right.  You keep going
-        past St. Mary's, past St. Catherine's, you pass Holy Trinity, you come to Our Lady of 
-        Mercy.'  I mean, after he gave me those directions, I don't even thank the guy, you know.  I 
-        looked at him and I said, 'I bless you!'"<br><br>
-      ~  Rodney Dangerfield, "I Don't Get No Respect", 1970<br><br> 
-
-      <video width="443" height="261" controls>
-        <source src="Rodney__1.mp4" type="video/mp4">
-         Your browser does not support the video tag.
-      </video><br><br>
-    </div><br><br><br><br>
-
-    <div class="boxed"><br>
-      Here.  Expand your vocab a little.<br><br>
-      <img src="SociallySinglingOut.png" /><br><br>
-    </div><br><br><br><br><br> 
-
-    <div class="boxed"><br>
-      "It lowers your inhibitions."<br><br>
-    </div><br><br><br><br>
-    
-
-    <div class="boxed"><br>
-        <iframe width="690" height="300" 
-          src="https://www.youtube.com/embed/WBblZqsmtqE" title="Cat&#39;s Claw (Live)" 
-          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-          gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+      <div class="boxed"><br>
+        <iframe width="873" height="491" 
+          src="https://www.youtube.com/embed/qdyMQOlbxis" 
+          title="LL COOL J - The Boomin&#39; System (Official Music Video)" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+          picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
           allowfullscreen></iframe><br><br>
-    </div><br><br><br><br><br>
+      </div><br><br><br>
 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="boxed"><br>
+        <iframe width="873" height="460" src="https://www.youtube.com/embed/u64NgDuis6g" title="Trim - Boat Remix (Feat. Pooh Shiesty) [Official Music Video]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div><br><br><br><br>
+      
 
-    <div class="boxed"><br>
-      <iframe width="325" height="576" 
-        src="https://www.youtube.com/embed/0H498YxuGpQ" title="Alice Cooper - School&#39;s Out (Larissa Liveir)" 
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
-        picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
-        allowfullscreen></iframe><br><br>
-    </div><br><br><br><br>  
+      
 
-    <div class="boxed"><br>
-      <iframe width="269" height="191" 
-        src="https://www.youtube.com/embed/9iw_BE_X9sA" title="The Rolling Stones - Emotional Rescue - OFFICIAL PROMO" 
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
-        picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
-        allowfullscreen></iframe><br><br>
-    </div>
 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-    <div class="boxed"><br>
-      "Now they're frightened of leaving it,<br>
-       Everyone's weaving it,<br> 
-       comin' on strong all the time,"<br><br> 
-      <iframe width="269" height="191" 
-        src="https://www.youtube.com/embed/seqaTuXkqFI" title="I Me Mine (Remastered 2009)" 
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-        gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
-        allowfullscreen></iframe><br><br> 
-    </div><br><br><br> 
 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-    <div class="boxed"><br>
-      <iframe width="269" height="191" 
-        src="https://www.youtube.com/embed/2jqyWI9Au-M" title="All the Young Dudes" 
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-        gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
-        allowfullscreen></iframe><br><br>
-    </div><br><br><br><br><br>  
 
-    <div class="boxed"><br>
-      Has communism eliminated poverty?<br><br>
-    </div><br><br><br><br><br>
 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-    <div class="boxed"><br>
-      <iframe width="630" height="352" 
-        src="https://www.youtube.com/embed/98Q8QsEc6sI" 
-        title="Ten Years After - I&#39;d Love To Change The World (1971 Original Mix) [Official Audio]" 
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
-        picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
-        allowfullscreen></iframe><br><br>
-    </div><br><br><br><br><br> 
 
-    <div class="boxed"><br>
-      <a href="https://www.cnn.com/videos/title-2546911">
-        <img src="https://media.cnn.com/api/v1/images/stellar/prod/lp-5t-1050x456px-logo-centered-all-white-copy.png?c=original&q=w_1050,c_fill" 
-          width="435" height="210" />
-      </a><br><br>
-    </div><br><br><br><br><br> 
 
-    <div class="boxed"><br><br>
-      "I love The Village as much as the next guy, but I'm telling you: if we continue
-      to self-segregate ourselves, the entire gay community's going to continue
-      to be margarinized."<br><br>
-      ~  Andre Royson<br><br>
-    </div><br><br><br><br><br> 
 
-    <div class="boxed"><br><br>
-      "Homosexuality in Russia is a crime 
-      and the punishment is seven years in prison, locked up with the other men. 
-      There is a three-year waiting list."<br><br>
-      ~  Yakov Smirnoff<br><br> 
-    </div><br><br><br><br><br>
 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
 
-    <div class="boxed"><br>
-      A feminine sound?<br><br>
-      <iframe width="607" height="390" 
-        src="https://www.youtube.com/embed/7H0YGtnhyas" title="Wynken, Blynken and Nod (2006 Remaster)" 
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-        gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
-        allowfullscreen></iframe><br><br> 
-    </div><br><br><br><br>
-
-    <div class="boxed"><br>
-      <iframe width="756" height="425" 
-        src="https://www.youtube.com/embed/4mzuVLXbYdU?list=OLAK5uy_nxzD7HhaKlgjXjz9w_6r0y2jNfa7JNC6M" 
-        title="Stand Alone" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-        encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
-        allowfullscreen></iframe><br><BR>  
-    </div><br><br><br><br><br>
-
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-    <div class="boxed"><br>
-      <iframe width="390" height="276" 
-        src="https://www.youtube.com/embed/aNZpGVkJKso" title="Strange Brew" 
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-        gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
-        allowfullscreen></iframe><br><br> 
-    </div><br><br><br><br><br>
-
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-    <div class="boxed"><br>
-      <iframe width="650" height="378" 
-        src="https://www.youtube.com/embed/a29Yqi6gjH0" title="She&#39;s So Fine" 
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-        gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
-        allowfullscreen></iframe><br><br> 
-    </div><br><br><br><br><br><br>
-
-    <div class="boxed"><br>
-     <a href="https://www.flavorflavofficial.com/">
-      <img src="https://static.wixstatic.com/media/641ca9_daeac3f7c5494fb8a9ac0d1134f57eaf~mv2.jpg/v1/crop/x_112,y_807,w_3820,h_3417/fill/w_936,h_881,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Flavor%20Flav%20Promo%20Headshot%20Photo.jpg" />
-     </a><br><br>
-    </div><br><br><br><br><br><br> 
+    </div><br><br>
     
-
-    <div class="boxed"><br>
-      <iframe width="640" height="360" 
-        src="https://www.youtube.com/embed/jiwktkw_rqE" title="Susan Tedeschi, Derek Truck (Any Day)" 
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
-        picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
-        allowfullscreen></iframe><br><br> 
-    </div><br><br><br><br>
-
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- 
- 
-    
-    <div class="boxed"><br>
-     <a href="https://www.life.com/">
-      <img src="https://static.life.com/wp-content/uploads/2019/08/09000230/logo_global.png" />
-     </a><br><br>
-    </div><br><br><br><br>
     
 
     
