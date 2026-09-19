@@ -14,12 +14,14 @@ const gib_nouns = ["technique","macromolecular hydrogenation","photochemical spe
     "cataclysmic transitional metamorphosis","ribozyme","librarianism","amide-derived polypeptides","tholin-carrying dust particles","unicellular life","biochemical remodeling","levorotatory configuration",
     "recombinant DNA technique","ß-structures of alternating polypeptidal workflows","magnetic field"]
 
-const gib_verbs = ["autosynthesize", "physiologically branch", "evaporate", "reactivate", "microbially diverge", "decarboxylate", "overcomplicate", "geochemically respire"]
+const gib_verbs = ["autosynthesize", "physiologically branch", "evaporate", "reactivate", "microbially diverge", 
+                   "decarboxylate", "overcomplicate", "geochemically respire"]
 
 const phrase_1 = ["The study of ", "We don't know ", "I propose ", "This "]
 const phrase_2 = ["experiments must ", "studies better ", "evidence should ", "funded experiments should not "]
 const phrase_3 = ["most of the ", "too much ", "nothing but "]
-const phrase_4 = ["or our funding is doomed.", "or the world will entropy and the human species will de-evolve.", "or we will cease to dominate the Venutians.", "or we're screwed, dude.", "or we're fractillated."]
+const phrase_4 = ["or our funding is doomed.", "or the world will entropy and the human species will de-evolve.", 
+                  "or we will cease to dominate the Venutians.", "or we're screwed, dude.", "or we're fractillated."]
 
 function generate_Sci()    		
 {     
