@@ -12,7 +12,7 @@ const gib_nouns = ["technique", "macromolecular hydrogenation", "photochemical s
 "experimentation", "empirical analysis", "pedagogical photogenesis", "autocatalytic synthesis", 
 "8-cyanoadenine phosphate", "purification and emergence", "glucose", 
 "enzymatic enhancement", "a catabolic branching pattern", 
-"GC-MS (gas chromatotography - mass spectrometry", "pyrimidine", "an enzymatic replication ligate", 
+"GC-MS (gas chromatotography - mass spectrometry)", "pyrimidine", "an enzymatic replication ligate", 
 "a chemolithotrophic metabolic system", "glycolic acid", "a long prebiotic oligomer", 
 "scientific evaluation", 
 "abiogenesis", "a cyanobacterium", "a super-kingdom-like grouping", "electrical discharge", 
