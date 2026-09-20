@@ -76,7 +76,7 @@ function generate_Sci()
   document.getElementById("adjective_2").innerHTML = adjectives[i_rand_nm] + ".  The experiment should ";
 
   jv2_rand_nm = Math.floor((Math.random() * 8)); 
-  document.getElementById("gib_verb_2").innerHTML = gib_verbs[jv2_rand_nm] + " the entire ";
+  document.getElementById("gib_verb_2").innerHTML = gib_verbs[jv2_rand_nm] + " all of ";
 
   j2_rand_nm = Math.floor((Math.random() * 69)); 
   document.getElementById("gib_noun_2").innerHTML = gib_nouns[j2_rand_nm] + " ";
