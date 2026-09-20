@@ -73,7 +73,7 @@ function generate_Sci()
   document.getElementById("gib_noun").innerHTML = gib_nouns[j_rand_nm] + " is ";
 
   i_rand_nm = Math.floor((Math.random() * 8)); 
-  document.getElementById("adjective").innerHTML = adjectives[i_rand_nm] + ".  The experiment should ";
+  document.getElementById("adjective_2").innerHTML = adjectives[i_rand_nm] + ".  The experiment should ";
 
   jv2_rand_nm = Math.floor((Math.random() * 8)); 
   document.getElementById("gib_verb_2").innerHTML = gib_verbs[jv2_rand_nm] + " the entire ";
