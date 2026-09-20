@@ -7,33 +7,33 @@ const substances = ["NH₄CN", "polypeptide", "aminoimidazole carbonitrile",
 "formamide CHONH₂", "phenylacetylene C₈H₆", "aldehyde", "isoguanine"]
 
 const gib_nouns = ["technique", "macromolecular hydrogenation", "photochemical spectrum", "bombardment", 
-"Butlerov synthesis", "short aliphatic acid", "autotrophic metabolism", "base-paired double helix", 
-"evolutionary progression", "carboxylic acid group", "nonbiological mirror image", 
-"experimental studies", "empirical analysis", "pedagogical photogenesis", "autocatalytic synthesis", 
+"Butlerov synthesis", "short aliphatic acid", "autotrophic metabolism", "a base-paired double helix", 
+"evolutionary progression", "a carboxylic acid group", "a nonbiological mirror image", 
+"experimentation", "empirical analysis", "pedagogical photogenesis", "autocatalytic synthesis", 
 "8-cyanoadenine phosphate", "purification and emergence", "glucose", 
-"enzymatic enhancement", "catabolic branching pattern", 
-"GC-MS (gas chromatotography - mass spectrometry", "pyrimidine", "enzymatic replication ligate", 
-"chemolithotrophic metabolic system", "glycolic acid", "long prebiotic oligomer", 
+"enzymatic enhancement", "a catabolic branching pattern", 
+"GC-MS (gas chromatotography - mass spectrometry", "pyrimidine", "an enzymatic replication ligate", 
+"a chemolithotrophic metabolic system", "glycolic acid", "a long prebiotic oligomer", 
 "scientific evaluation", 
-"abiogenesis", "cyanobacteria", "super-kingdom-like groupings", "electrical discharge", 
-"Proust's uncharacterized side-products", "heterooligomers", "centrifugal forces", "ƒ-nucleotides", 
-"gravitational attraction", "pyranosyl isomer of ribose", "polymerase", "high amounts of cytosine", 
-"α-arginine", "dilute cyanide solutions", "peptide nucleic acids (PNAs)", 
+"abiogenesis", "a cyanobacterium", "a super-kingdom-like grouping", "electrical discharge", 
+"Proust's uncharacterized side-product", "a heterooligomer", "centrifugal force", "an ƒ-nucleotide", 
+"gravitational attraction", "a pyranosyl isomer of ribose", "polymerase", "a high amount of cytosine", 
+"α-arginine", "dilute cyanide solution", "a group of peptide nucleic acids (PNAs)", 
 "a score of ketones", 
 "transcribed messenger RNA", "paleobiologic evidence", "glycoaldehyde monophosphate", "formaldehyde", 
-"Last Common Ancestor", "massive sheets of lava", "hydrothermal vents at 300° C", 
+"a Last Common Ancestor", "a massive sheet of lava", "a hydrothermal vent at 300° C", 
 "probability", "CH₄", "subterfugality", "crystalline graphite", "methanogen", "isopolymerization", 
 "diaminopyrimidine", "thioacetic acid C₂H₄OS", 
-"cataclysmic transitional metamorphosis", "ribozyme", "librarianism", "amide-derived polypeptides", 
-"tholin-carrying dust particles", "unicellular life", "biochemical remodeling", 
+"cataclysmic transitional metamorphosis", "ribozyme", "librarianism", "an amide-derived polypeptide", 
+"a group of tholin-carrying dust particles", "unicellular life", "biochemical remodeling", 
 "levorotatory configuration", 
-"recombinant DNA technique", "ß-structures of alternating polypeptidal workflows", "magnetic field"]
+"recombinant DNA technique", "a ß-structure of alternating polypeptidal workflow", "magnetic field"]
 
 const gib_verbs = ["autosynthesize", "physiologically branch", "evaporate", "reactivate", "microbially diverge", 
 "decarboxylate", "overcomplicate", "geochemically respire"]
 
 const phrase_1 = ["The study of ", "We don't know ", "I propose ", "This "]
-const phrase_2 = ["experiments must ", "studies better ", "evidence should ", "funded experiments should not "]
+const phrase_2 = ["experiments must ", "studies should ", "evidence should ", "funded experiments should not "]
 const phrase_3 = ["most of the ", "too much ", "nothing but "]
 const phrase_4 = ["or our funding is doomed.", "or the world will entropy and the human species will de-evolve.", 
                   "or we will cease to dominate the Venutians.", "or we're screwed, dude.", "or we're fractillated."]
