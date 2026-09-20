@@ -3,7 +3,7 @@ const adjectives = ["nanomolecular", "reducing", "experimental", "corrosive",
 "limiting", "photosynthetic", "ribose-containing", "diphosphorylated"]
 
 const substances = ["NH₄CN", "polypeptide", "aminoimidazole carbonitrile", 
-"thermodynamically plausible source of ammonium nitrite", 
+"a thermodynamically plausible source of ammonium nitrite", 
 "formamide CHONH₂", "phenylacetylene C₈H₆", "aldehyde", "isoguanine"]
 
 const gib_nouns = ["technique", "macromolecular hydrogenation", "photochemical spectrum", "bombardment", 
