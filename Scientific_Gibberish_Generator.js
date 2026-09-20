@@ -34,7 +34,7 @@ const gib_verbs = ["autosynthesize", "physiologically branch", "evaporate", "rea
 
 const phrase_1 = ["The study of ", "We don't know ", "I propose ", "This "]
 const phrase_2 = ["experiments must ", "studies should ", "evidence should ", "funded experiments should not "]
-const phrase_3 = ["most of the ", "too much of the ", "nothing but "]
+const phrase_3 = ["most of ", "usually ", "nothing but "]
 const phrase_4 = ["or our funding is doomed.", "or the world will entropy and the human species will de-evolve.", 
                   "or we will cease to dominate the Venutians.", "or we're screwed, dude.", "or we're fractillated."]
 
