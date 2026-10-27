@@ -374,6 +374,187 @@ out of items labeled A, B, C, D, E:<br><br>
 
   </div><br><br><br><br>
 
+    <div class="boxed"><br>
+      Integration by Parts in Integral Transforms: <br><br> 
+
+    <!-- 1. Standard Integration by Parts Formula -->
+    1. Standard Integration by Parts <br><br> 
+    The foundational formula used to evaluate these transforms: <code>&int; u dv = u v - &int; v du</code> <br><br> 
+    
+        <math display="block" xmlns="http://w3.org">
+            <mo>&#x222B;</mo>
+            <mi>u</mi>
+            <mo>&#x2009;</mo>
+            <mi>d</mi>
+            <mi>v</mi>
+            <mo>=</mo>
+            <mi>u</mi>
+            <mi>v</mi>
+            <mo>&#x2212;</mo>
+            <mo>&#x222B;</mo>
+            <mi>v</mi>
+            <mo>&#x2009;</mo>
+            <mi>d</mi>
+            <mi>u</mi>
+        </math> <br><br> 
+
+      <!-- 2. Fourier Transform Application -->
+    2. Fourier Transform (Derivative Property) <br><br> 
+    Applying integration by parts to the Fourier Transform of a derivative <code>f'(t)</code>, assuming <code>f(t)</code> vanishes at infinity: <br><br>
+    
+        <math display="block" xmlns="http://w3.org">
+            <mi>&#x2133;</mi>
+            <mo stretchy="false">{</mo>
+            <msup><mi>f</mi><mo>&#x2032;</mo></msup>
+            <mo stretchy="false">(</mo>
+            <mi>t</mi>
+            <mo stretchy="false">)</mo>
+            <mo stretchy="false">}</mo>
+            <mo>=</mo>
+            <msubsup>
+                <mrow><mo>&#x222B;</mo></mrow>
+                <mrow><mo>&#x2212;</mo><mo>&#x221E;</mo></mrow>
+                <mrow><mo>&#x221E;</mo></mrow>
+            </msubsup>
+            <msup><mi>f</mi><mo>&#x2032;</mo></msup>
+            <mo stretchy="false">(</mo>
+            <mi>t</mi>
+            <mo stretchy="false">)</mo>
+            <msup><mi>e</mi><mrow><mo>&#x2212;</mo><mi>i</mi><mi>&#x3C9;</mi><mi>t</mi></mrow></msup>
+            <mo>&#x2009;</mo>
+            <mi>d</mi>
+            <mi>t</mi>
+            <mo>=</mo>
+            <msubsup>
+                <mrow><mo>[</mo><mi>f</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><msup><mi>e</mi><mrow><mo>&#x2212;</mo><mi>i</mi><mi>&#x3C9;</mi><mi>t</mi></mrow></msup><mo>]</mo></mrow>
+                <mrow><mo>&#x2212;</mo><mo>&#x221E;</mo></mrow>
+                <mrow><mo>&#x221E;</mo></mrow>
+            </msubsup>
+            <mo>&#x2212;</mo>
+            <msubsup>
+                <mrow><mo>&#x222B;</mo></mrow>
+                <mrow><mo>&#x2212;</mo><mo>&#x221E;</mo></mrow>
+                <mrow><mo>&#x221E;</mo></mrow>
+            </msubsup>
+            <mi>f</mi>
+            <mo stretchy="false">(</mo>
+            <mi>t</mi>
+            <mo stretchy="false">)</mo>
+            <mrow><mo>(</mo><mo>&#x2212;</mo><mi>i</mi><mi>&#x3C9;</mi><msup><mi>e</mi><mrow><mo>&#x2212;</mo><mi>i</mi><mi>&#x3C9;</mi><mi>t</mi></mrow></msup><mo>)</mo></mrow>
+            <mo>&#x2009;</mo>
+            <mi>d</mi>
+            <mi>t</mi>
+        </math> <br><br>
+
+      <math display="block" xmlns="http://w3.org">
+            <mo>=</mo>
+            <mn>0</mn>
+            <mo>+</mo>
+            <mi>i</mi>
+            <mi>&#x3C9;</mi>
+            <msubsup>
+                <mrow><mo>&#x222B;</mo></mrow>
+                <mrow><mo>&#x2212;</mo><mo>&#x221E;</mo></mrow>
+                <mrow><mo>&#x221E;</mo></mrow>
+            </msubsup>
+            <mi>f</mi>
+            <mo stretchy="false">(</mo>
+            <mi>t</mi>
+            <mo stretchy="false">)</mo>
+            <msup><mi>e</mi><mrow><mo>&#x2212;</mo><mi>i</mi><mi>&#x3C9;</mi><mi>t</mi></mrow></msup>
+            <mo>&#x2009;</mo>
+            <mi>d</mi>
+            <mi>t</mi>
+            <mo>=</mo>
+            <mi>i</mi>
+            <mi>&#x3C9;</mi>
+            <mi>F</mi>
+            <mo stretchy="false">(</mo>
+            <mi>&#x3C9;</mi>
+            <mo stretchy="false">)</mo>
+        </math> <br><br> 
+
+      <!-- 3. Laplace Transform Application -->
+    3. Laplace Transform (Derivative Property) <br><br> 
+    Applying integration by parts to the Laplace Transform of a derivative <code>f'(t)</code>: <br><br> 
+    
+        <math display="block" xmlns="http://w3.org">
+            <mi>&#x2112;</mi>
+            <mo stretchy="false">{</mo>
+            <msup><mi>f</mi><mo>&#x2032;</mo></msup>
+            <mo stretchy="false">(</mo>
+            <mi>t</mi>
+            <mo stretchy="false">)</mo>
+            <mo stretchy="false">}</mo>
+            <mo>=</mo>
+            <msubsup>
+                <mrow><mo>&#x222B;</mo></mrow>
+                <mrow><mn>0</mn></mrow>
+                <mrow><mo>&#x221E;</mo></mrow>
+            </msubsup>
+            <msup><mi>f</mi><mo>&#x2032;</mo></msup>
+            <mo stretchy="false">(</mo>
+            <mi>t</mi>
+            <mo stretchy="false">)</mo>
+            <msup><mi>e</mi><mrow><mo>&#x2212;</mo><mi>s</mi><mi>t</mi></mrow></msup>
+            <mo>&#x2009;</mo>
+            <mi>d</mi>
+            <mi>t</mi>
+            <mo>=</mo>
+            <msubsup>
+                <mrow><mo>[</mo><mi>f</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><msup><mi>e</mi><mrow><mo>&#x2212;</mo><mi>s</mi><mi>t</mi></mrow></msup><mo>]</mo></mrow>
+                <mrow><mn>0</mn></mrow>
+                <mrow><mo>&#x221E;</mo></mrow>
+            </msubsup>
+            <mo>&#x2212;</mo>
+            <msubsup>
+                <mrow><mo>&#x222B;</mo></mrow>
+                <mrow><mn>0</mn></mrow>
+                <mrow><mo>&#x221E;</mo></mrow>
+            </msubsup>
+            <mi>f</mi>
+            <mo stretchy="false">(</mo>
+            <mi>t</mi>
+            <mo stretchy="false">)</mo>
+            <mrow><mo>(</mo><mo>&#x2212;</mo><mi>s</mi><msup><mi>e</mi><mrow><mo>&#x2212;</mo><mi>s</mi><mi>t</mi></mrow></msup><mo>)</mo></mrow>
+            <mo>&#x2009;</mo>
+            <mi>d</mi>
+            <mi>t</mi>
+        </math>
+ 
+        <math display="block" xmlns="http://w3.org">
+            <mo>=</mo>
+            <mrow><mo>(</mo><mn>0</mn><mo>&#x2212;</mo><mi>f</mi><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo><mo>)</mo></mrow>
+            <mo>+</mo>
+            <mi>s</mi>
+            <msubsup>
+                <mrow><mo>&#x222B;</mo></mrow>
+                <mrow><mn>0</mn></mrow>
+                <mrow><mo>&#x221E;</mo></mrow>
+            </msubsup>
+            <mi>f</mi>
+            <mo stretchy="false">(</mo>
+            <mi>t</mi>
+            <mo stretchy="false">)</mo>
+            <msup><mi>e</mi><mrow><mo>&#x2212;</mo><mi>s</mi><mi>t</mi></mrow></msup>
+            <mo>&#x2009;</mo>
+            <mi>d</mi>
+            <mi>t</mi>
+            <mo>=</mo>
+            <mi>s</mi>
+            <mi>L</mi>
+            <mo stretchy="false">(</mo>
+            <mi>s</mi>
+            <mo stretchy="false">)</mo>
+            <mo>&#x2212;</mo>
+            <mi>f</mi>
+            <mo stretchy="false">(</mo>
+            <mn>0</mn><mo stretchy="false">)</mo>
+        </math>  <br><br> 
+
+      
+    </div><br><br><br><br><br> 
+
     
     
 
